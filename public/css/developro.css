@@ -1,0 +1,125 @@
+#plan-holder {
+  max-width: 624px;
+}
+/* qTip
+================================================== */
+.qtip {
+  position: absolute;
+  left: -28000px;
+  top: -28000px;
+  display: none;
+  width: 190px;
+  box-shadow: none;
+}
+.qtip .qtip-content {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  word-wrap: break-word;
+  color: white !important;
+  font-size: 14px !important;
+  line-height: 19px;
+  padding: 10px 10px;
+  border-radius: 3px;
+}
+.qtip .qtip-content b.fr {
+  float: right;
+}
+.qtip .qtip-content h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+.qtip .qtip-content h3 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0 9px 0;
+  font-size: 17px;
+}
+.qtip .qtip-content h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 9px;
+  margin-top: 9px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.qtip .qtip-content hr {
+  margin: 10px 0 7px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.qtip .qtip-content li {
+  border-bottom: 1px solid #3f3f3f;
+  padding: 3px 0;
+  font-weight: 300;
+}
+.qtip .qtip-content li b {
+  font-weight: 600;
+}
+.qtip .qtip-content .floor-stats {
+  font-size: 13px;
+  line-height: normal;
+  text-align: left;
+}
+.qtip .qtip-content .floor-stats span {
+  float: right;
+}
+.qtip-default .qtip-content {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #183245;
+  background-color: #183245;
+}
+.qtip-tip {
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 10;
+  visibility: hidden;
+}
+.qtip-tip,
+.qtip-tip canvas {
+  position: absolute;
+  color: var(--main-orange) !important;
+  border: 0 dashed transparent !important;
+}
+.qtip-tip canvas {
+  top: 0;
+  left: 0;
+}
+/* Kolory dymkow */
+/*
+'1' => 'Na sprzedaż',
+'2' => 'Rezerwacja',
+'3' => 'Sprzedane',
+'4' => 'Wynajęte'
+ */
+.qtip.status-1 .qtip-content {
+  background: #25690c;
+  border: 1px solid #25690c;
+}
+.qtip-tip.status-1 canvas {
+  background: #25690c !important;
+}
+.qtip.status-2 .qtip-content {
+  background: #1660b3;
+  border: 1px solid #1660b3;
+}
+.qtip-tip.status-2 canvas {
+  background: #1660b3 !important;
+  color: black;
+}
+.qtip.status-3 .qtip-content {
+  background: #aa1215;
+  border: 1px solid #aa1215;
+}
+.qtip-tip.status-3 canvas {
+  background: #aa1215 !important;
+}
+.qtip.status-4 .qtip-content {
+  background: #de8300;
+  border: 1px solid #de8300;
+}
+.qtip-tip.status-4 canvas {
+  background: #de8300 !important;
+}
+/*# sourceMappingURL=developro.css.map */

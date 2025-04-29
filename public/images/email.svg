@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+  <defs>
+    <filter id="Ellipse_51" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_378" data-name="Group 378" transform="translate(-518 -5087.673)">
+    <g transform="matrix(1, 0, 0, 1, 518, 5087.67)" filter="url(#Ellipse_51)">
+      <circle id="Ellipse_51-2" data-name="Ellipse 51" cx="18" cy="18" r="18" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_metro-mail" data-name="Icon metro-mail" d="M17.164,7.712H6.477A1.33,1.33,0,0,0,5.148,9.048l-.007,8.015A1.336,1.336,0,0,0,6.477,18.4H17.164A1.336,1.336,0,0,0,18.5,17.063V9.048a1.336,1.336,0,0,0-1.336-1.336Zm0,2.672-5.344,3.34-5.344-3.34V9.048l5.344,3.34,5.344-3.34v1.336Z" transform="translate(533.179 5098.617)"/>
+  </g>
+</svg>
