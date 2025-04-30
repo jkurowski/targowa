@@ -16,7 +16,7 @@
                             <div class="col">
                                 <div class="input-select">
                                     <label for="inputRooms" class="form-label">Ilość pokoi</label>
-                                    <select id="inputRooms" class="form-select" name="rooms">
+                                    <select id="inputRooms" class="form-select" name="s_pokoje">
                                         <option selected>Wszystko</option>
                                         <option>...</option>
                                     </select>
@@ -25,7 +25,7 @@
                             <div class="col">
                                 <div class="input-select">
                                     <label for="inputArea" class="form-label">Metraż</label>
-                                    <select id="inputArea" class="form-select" name="area">
+                                    <select id="inputArea" class="form-select" name="s_metry">
                                         <option selected>Wszystko</option>
                                         <option>...</option>
                                     </select>

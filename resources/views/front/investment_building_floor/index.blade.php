@@ -6,24 +6,21 @@
 
 @section('content')
     <main class="apartments">
-        <section class="breadcrumb-page">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Strona główna</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('front.developro.investment.index') }}">Apartamenty</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{$investment->floor->name}}</li>
+                </ol>
+            </nav>
+        </div>
+
+        <section class="p-0">
             <div class="container">
-                <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Strona główna</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Apartamenty</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="first-sec position-relative">
-            <img src="{{ asset('images/graphic.svg') }}" alt="grafika wieżowca" loading="lazy" class="project-graphic">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 mx-auto text-center">
-                        <div class="section-header mb-3">
-                            <h1 class="section-header__title section-header__title--h1">Apartamenty - {{$investment->floor->name}}</h1>
-                        </div>
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <h1 class="page-title">{{$investment->floor->name}}</h1>
                     </div>
                 </div>
 
@@ -32,15 +29,15 @@
                         <div class="row floor-nav-row mt-5">
                             <div class="col-12 col-lg-4 text-start">
                                 @if($prev_floor)
-                                    <a href="{{route('front.developro.investment.floor', [$prev_floor, Str::slug($prev_floor->name)])}}" class="project-btn w-100">{{$prev_floor->name}}</a>
+                                    <a href="{{route('front.developro.investment.floor', [$prev_floor, Str::slug($prev_floor->name)])}}" class="bttn-big">{{$prev_floor->name}}</a>
                                 @endif
                             </div>
                             <div class="col-12 col-lg-4 d-flex justify-content-center">
-                                <a href="{{ route('front.developro.investment.index') }}" class="project-btn w-100">Plan budynku</a>
+                                <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Plan budynku</a>
                             </div>
                             <div class="col-12 col-lg-4 text-end">
                                 @if($next_floor)
-                                    <a href="{{route('front.developro.investment.floor', [$next_floor, Str::slug($next_floor->name)])}}" class="project-btn w-100">{{$next_floor->name}}</a>
+                                    <a href="{{route('front.developro.investment.floor', [$next_floor, Str::slug($next_floor->name)])}}" class="bttn-big">{{$next_floor->name}}</a>
                                 @endif
                             </div>
                         </div>
@@ -48,7 +45,7 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-lg-9 mx-auto">
+                    <div class="col-12">
                         @if($investment->floor->file)
                             <div id="floorplan-holder" class="p-1">
                                 <img src="{{ asset('/investment/floor/'.$investment->floor->file) }}" alt="{{$investment->floor->name}}" id="invesmentplan" usemap="#invesmentplan">

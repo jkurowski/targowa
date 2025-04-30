@@ -15,8 +15,7 @@
             </nav>
         </div>
 
-        <section class="first-sec position-relative">
-
+        <section class="p-0">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-6 text-center">
@@ -24,11 +23,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-9 mx-auto">
-
+                    <div class="col-12">
                         @if ($investment->plan)
                             <div id="plan">
-                                <div id="plan-holder" class="d-flex justify-content-center m-auto">
+                                <div id="plan-holder" class="d-flex justify-content-center m-auto p-1">
                                     <img src="{{ asset('/investment/plan/' . $investment->plan->file) }}"
                                         alt="{{ $investment->name }}" id="invesmentplan" usemap="#invesmentplan"
                                         class="d-block mx-auto main-building" loading="eager">
@@ -50,61 +48,55 @@
                 </div>
             </div>
         </section>
-        <section class="search-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 mx-auto">
-                        <div class="search-container">
-                            <form id="mainsearch" method="get" action="" class="project-gradient">
-                                <div class="row">
-                                    <div class="col-sm-11">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="select-container">
-                                                    <label for="rooms" class="form-label">Ilość pokoi</label>
-                                                    <select id="rooms" name="s_pokoje" class="form-select">
-                                                        <option value="" {{ request('s_pokoje') == null ? 'selected' : '' }}>Wszystkie</option>
-                                                        <option value="1" {{ request('s_pokoje') == 1 ? 'selected' : '' }}>1</option>
-                                                        <option value="2" {{ request('s_pokoje') == 2 ? 'selected' : '' }}>2</option>
-                                                        <option value="3" {{ request('s_pokoje') == 3 ? 'selected' : '' }}>3</option>
-                                                        <option value="4" {{ request('s_pokoje') == 4 ? 'selected' : '' }}>4</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="select-container">
-                                                    <label for="area" class="form-label">Metraż</label>
-                                                    <select id="area" name="s_metry" class="form-select">
-                                                        <option value="">Wszystkie</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="select-container">
-                                                    <label for="floor" class="form-label">Piętro</label>
-                                                    <select id="floor" name="s_pietro" class="form-select">
-                                                        <option value="" {{ request('s_pietro') == null ? 'selected' : '' }}>Wszystkie</option>
-                                                        @foreach($floors as $f)
-                                                            <option value="{{ $f->id }}" {{ request('s_pietro') == $f->id ? 'selected' : '' }}>{{ $f->name }}</option>
-                                                        @endforeach
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-1 align-self-center text-center mt-3 mt-sm-0 p-0">
-                                        <button type="submit">
-                                            <img src="{{ asset('images/search.svg') }}" alt="ikona szukaj" width="65" height="65" loading="lazy">
-                                        </button>
-                                    </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div id="search">
+                        <form action="" method="get" class="d-flex align-items-center h-100">
+                            <div class="col">
+                                <div class="input-select">
+                                    <label for="inputRooms" class="form-label">Ilość pokoi</label>
+                                    <select id="inputRooms" class="form-select" name="s_pokoje">
+                                        <option value="" {{ request('s_pokoje') == null ? 'selected' : '' }}>Wszystkie</option>
+                                        <option value="1" {{ request('s_pokoje') == 1 ? 'selected' : '' }}>1</option>
+                                        <option value="2" {{ request('s_pokoje') == 2 ? 'selected' : '' }}>2</option>
+                                        <option value="3" {{ request('s_pokoje') == 3 ? 'selected' : '' }}>3</option>
+                                        <option value="4" {{ request('s_pokoje') == 4 ? 'selected' : '' }}>4</option>
+                                    </select>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-select">
+                                    <label for="inputArea" class="form-label">Metraż</label>
+                                    <select id="inputArea" class="form-select" name="s_metry">
+                                        <option selected>Wszystko</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-select">
+                                    <label for="inputFloor" class="form-label">Piętro</label>
+                                    <select id="inputFloor" class="form-select" name="s_pietro">
+                                        <option value="" {{ request('s_pietro') == null ? 'selected' : '' }}>Wszystkie</option>
+                                        @foreach($floors as $f)
+                                            <option value="{{ $f->id }}" {{ request('s_pietro') == $f->id ? 'selected' : '' }}>{{ $f->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="34.168" height="34.177" viewBox="0 0 34.168 34.177"><path d="M38.267,36.2l-9.5-9.592a13.543,13.543,0,1,0-2.055,2.082l9.441,9.53a1.462,1.462,0,0,0,2.064.053A1.472,1.472,0,0,0,38.267,36.2ZM18.123,28.8a10.694,10.694,0,1,1,7.563-3.132A10.628,10.628,0,0,1,18.123,28.8Z" transform="translate(-4.5 -4.493)" fill="#978c7d"/></svg>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="search-results">
+        </div>
+
+        <section class="pb-0 pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8 mx-auto pt-4 d-flex aligm-items-center justify-content-end">
@@ -229,84 +221,4 @@
     <script src="{{ asset('/js/plan/imagemapster.js') }}" charset="utf-8"></script>
     <script src="{{ asset('/js/plan/plan.js') }}" charset="utf-8"></script>
     <link href="{{ asset('/css/developro.min.css') }}" rel="stylesheet">
-    <script>
-        $(document).ready(function() {
-
-            // Get the CSRF token from the meta tag
-            let csrfToken = $('meta[name="csrf-token"]').attr('content');
-
-            function fetchFilters(method) {
-                let rooms;
-                let area;
-                let floor;
-
-                if(method === 'load') {
-                    rooms = {!! (request()->input('s_pokoje')) ? request()->input('s_pokoje') : "''" !!};
-                } else {
-                    rooms = $('#rooms').val();
-                }
-
-                if(method === 'load') {
-                    area = {!! (request()->input('s_metry')) ? request()->input('s_metry') : "''" !!};
-                } else {
-                    area = $('#area').val();
-                }
-
-                if(method === 'load') {
-                    floor = {!! (request()->input('s_pietro')) ? request()->input('s_pietro') : "''" !!};
-                } else {
-                    floor = $('#floor').val();
-                }
-
-                $.ajax({
-                    url: "{{ route('front.developro.investment.property.filter') }}",
-                    method: 'GET',
-                    data: {
-                        rooms: rooms,
-                        area: area,
-                        floor: floor
-                    },
-                    headers: {
-                        'X-CSRF-TOKEN': csrfToken
-                    },
-                    success: function(response) {
-                        // Update select options based on response
-                        //updateSelect('#rooms', response.filters.rooms, rooms);
-                        updateSelect('#area', response.filters.areas, area);
-                        //updateFloorSelect('#floor', response.filters.floors, floor);
-                    }
-                });
-            }
-
-            function updateSelect(selector, options, selectedValue) {
-                // Convert all options to strings for comparison
-                options = options.map(option => option.toString());
-                selectedValue = selectedValue.toString(); // Convert selectedValue to string
-
-                $(selector).html('<option value="">Wszystkie</option>');
-                options.forEach(option => {
-                    let selected = option === selectedValue ? 'selected' : '';
-                    $(selector).append(`<option value="${option}" ${selected}>${option}</option>`);
-                });
-            }
-
-            // function updateFloorSelect(selector, options, selectedValue) {
-            //     $(selector).html('<option value="">Wszystkie</option>');
-            //     $.each(options, function(key, option) {
-            //         let id = option;
-            //         let value = option === 'object' ? option : key;
-            //         let selected = id === parseInt(selectedValue) ? 'selected' : '';
-            //         let label = (option === 5) ? 'Parter' : `Piętro ${value}`;
-            //         $(selector).append(`<option value="${option}" ${selected}>${label}</option>`);
-            //     });
-            // }
-
-            $('#rooms, #area, #floor').on('change', function() {
-                fetchFilters('update');
-            });
-
-            // Initial fetch
-            fetchFilters('load');
-        });
-    </script>
 @endpush

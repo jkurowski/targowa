@@ -56,8 +56,8 @@ return [
     */
 
     'floor' => [
-        'width' => 1024,
-        'height' => 1024
+        'width' => 1600,
+        'height' => 1600
     ],
 
     /*
