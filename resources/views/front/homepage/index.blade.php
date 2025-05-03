@@ -20,12 +20,12 @@
                             </div>
                             <div class="col-6 d-flex align-items-end">
                                 <div class="slider-img w-100">
-                                    <img src="{{ asset('uploads/slider/slide-1.png') }}" alt="" class="w-100">
+                                    <img src="{{ asset('uploads/slider/slide-1.png') }}" alt="" class="w-100" width="580" height="589">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-1-bg.jpg') }}" alt="" class="w-100">
+                    <img src="{{ asset('uploads/slider/slide-1-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
                 </li>
                 <li>
                     <div class="container">
@@ -41,12 +41,12 @@
                             </div>
                             <div class="col-6 d-flex align-items-end">
                                 <div class="slider-img w-100">
-                                    <img src="{{ asset('uploads/slider/slide-2.png') }}" alt="" class="w-100">
+                                    <img src="{{ asset('uploads/slider/slide-2.png') }}" alt="" class="w-100" width="580" height="589">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-2-bg.jpg') }}" alt="" class="w-100">
+                    <img src="{{ asset('uploads/slider/slide-2-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
                 </li>
                 <li>
                     <div class="container">
@@ -62,12 +62,12 @@
                             </div>
                             <div class="col-6 d-flex align-items-center">
                                 <div class="slider-img w-100">
-                                    <img src="{{ asset('uploads/slider/slide-3.png') }}" alt="" class="w-100">
+                                    <img src="{{ asset('uploads/slider/slide-3.png') }}" alt="" class="w-100" width="580" height="502">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-3-bg.jpg') }}" alt="" class="w-100">
+                    <img src="{{ asset('uploads/slider/slide-3-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
                 </li>
             </ul>
         </div>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col-6 d-flex justify-content-end">
                         <div class="custom-clip">
-                            <img src="{{ asset('../images/5.jpg') }}" alt="Opis zdjęcia" />
+                            <img src="{{ asset('../images/5.jpg') }}" alt="Opis zdjęcia" width="526" height="665">
                         </div>
                     </div>
                 </div>
@@ -380,7 +380,7 @@
                     </div>
                     <div class="col-6 d-flex justify-content-end">
                         <div class="custom-clip">
-                            <img src="{{ asset('../images/nasz-pracownik-z-doswiadczeniem.jpg') }}" alt="Opis zdjęcia" />
+                            <img src="{{ asset('../images/nasz-pracownik-z-doswiadczeniem.jpg') }}" alt="Opis zdjęcia" width="628" height="665">
                         </div>
                     </div>
                 </div>

@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="col-5">
-                            <img src="{{ asset('../images/cta-woman.png') }}" alt="Opis zdjęcia" />
+                            <img src="{{ asset('../images/cta-woman.png') }}" alt="Opis zdjęcia" width="498" height="404">
                         </div>
                     </div>
                 </div>

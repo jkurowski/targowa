@@ -2,18 +2,18 @@
     <div class="container">
         <div class="row">
             <div class="col-5">
-                <img src="{{ asset('../images/logo_big.svg') }}" alt="">
+                <img src="{{ asset('../images/logo_big.svg') }}" alt="" width="234" height="159">
                 <p class="mt-4 mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <br>sed diam nonumy eirmod tempor invidunt ut labore</p>
             </div>
             <div class="col-2">
                 <div class="footer-box">
                     <h4>Menu</h4>
                     <ul class="mb-0 list-unstyled">
-                        <li><a href="">O Inwestycji</a></li>
-                        <li><a href="">Apartamenty</a></li>
-                        <li><a href="">Lokalizacja</a></li>
-                        <li><a href="">Odkrywaj okolicę</a></li>
-                        <li><a href="">Galeria</a></li>
+                        <li><a href="/">O Inwestycji</a></li>
+                        <li><a href="{{ route('front.developro.investment.index') }}">Apartamenty</a></li>
+                        <li><a href="{{ route('front.lokalizacja') }}">Odkrywaj okolicę</a></li>
+                        <li><a href="{{ route('front.investor') }}">Inwestor</a></li>
+                        <li><a href="{{ route('front.gallery') }}">Galeria</a></li>
                     </ul>
                 </div>
             </div>
