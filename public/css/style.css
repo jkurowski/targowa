@@ -566,6 +566,62 @@ button:focus,
   font-weight: 500;
   padding: 0 0 6px 30px;
 }
+/* Mapa
+================================================== */
+#map {
+  min-height: 810px;
+}
+#maplegend .box-icon-holder {
+  display: flex;
+  height: 103px;
+  width: 69px;
+  background-size: 69px 103px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}
+#maplegend .maplegend-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+#maplegend span {
+  font-size: 15px;
+}
+#maplegend span strong {
+  font-family: "MuseoModerno", sans-serif;
+  font-style: normal;
+  font-size: 23px;
+  font-weight: 500;
+  display: block;
+}
+#maplegend .maplegend-red .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='red'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-blue .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%2300B1FF'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-orange .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%23FF6F00'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-purple .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%236900F2'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-green .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%2330B442'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-green .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%2330B442'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-pink .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%23F308AD'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .maplegend-grey .box-icon-holder {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='87' height='132' viewBox='0 0 87 132'%3E%3Cg fill='none' stroke='%23978C7D'%3E%3Cpath d='M43.5,0h0A43.5,43.5,0,0,1,87,43.5V132H0V43.5A43.5,43.5,0,0,1,43.5,0Z'/%3E%3Cpath d='M43.5.5h0a43,43,0,0,1,43,43v88H.5v-88A43,43,0,0,1,43.5.5Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+#maplegend .border-bottom {
+  border-bottom: 1px solid #978C7D !important;
+}
 /* Breadcrumb
 ================================================== */
 .breadcrumb {

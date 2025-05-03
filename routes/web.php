@@ -75,6 +75,11 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
     )->name('packages');
 
     Route::get(
+        'lokalizacja',
+        'Static\IndexController@lokalizacja'
+    )->name('lokalizacja');
+
+    Route::get(
         'finansowanie',
         'Static\IndexController@financing'
     )->name('financing');

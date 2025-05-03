@@ -51,6 +51,13 @@ class IndexController extends Controller
         return view('front.static.financing', compact('page'));
     }
 
+    public function lokalizacja()
+    {
+        $page = Page::find(7);
+        $markers = Map::all();
+        return view('front.static.lokalizacja', compact('page', 'markers'));
+    }
+
     public function gallery()
     {
         $page = Page::find(5);
