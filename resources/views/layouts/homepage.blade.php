@@ -47,7 +47,95 @@
     <script src="{{ asset('/js/jquery.min.js') }}"></script>
     <script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/js/main.js') }}"></script>
+    <script src="{{ asset('/js/leaflet.min.js') }}" charset="utf-8"></script>
+    <link href="{{ asset('/css/leaflet.min.css') }}" rel="stylesheet">
+    <script>
+        const tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        });
 
+        const icons = [];
+        for (let i = 0; i <= 6; i++) {
+            icons[i] = L.icon({
+                iconUrl: `{{ asset('images/mapicons/${i}.png') }}`,
+                shadowUrl: '',
+                iconSize: [40, 40],
+                iconAnchor: [20, 32]
+            });
+        }
+
+        const markers = [];
+        markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
+
+        @foreach($markers as $m)
+        markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
+        @endforeach
+
+        const featureGroup = L.featureGroup(markers);
+
+        const mapDiv = document.getElementById("map");
+        let map = new L.Map(mapDiv, {
+            center: [0, 0],
+            zoom: 0,
+            layers: [tileLayer, featureGroup]
+        });
+
+        map.fitBounds(featureGroup.getBounds(), {
+            padding: [50, 50]
+        });
+
+        map.on('popupclose', function () {
+            map.fitBounds(featureGroup.getBounds(), {
+                padding: [50, 50]
+            });
+        });
+
+        function debounce(func) {
+            let timer;
+            return function (event) {
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(func, 100, event);
+            };
+        }
+
+        window.addEventListener("resize", debounce(function (e) {
+            map.fitBounds(featureGroup.getBounds(), {
+                padding: [50, 50]
+            });
+        }));
+
+        const alwaysIncludedMarker = L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja');
+
+        // Function to filter markers
+        function filterMarkers(group) {
+            featureGroup.clearLayers();
+            featureGroup.addLayer(alwaysIncludedMarker);
+            markers.forEach(marker => {
+                if (group === null || marker.options.icon.options.iconUrl.includes(`/${group}.png`)) {
+                    featureGroup.addLayer(marker);
+                }
+            });
+            map.fitBounds(featureGroup.getBounds(), {
+                padding: [50, 50]
+            });
+        }
+
+        // Add click event listeners to the divs
+        document.querySelectorAll('.map__legend').forEach(div => {
+            div.addEventListener('click', function() {
+                const group = this.getAttribute('data-group');
+                filterMarkers(group);
+            });
+        });
+
+        // Optionally add a reset button to show all markers
+        const resetButton = document.getElementById('resetButton');
+        if (resetButton) {
+            resetButton.addEventListener('click', function() {
+                filterMarkers(null);
+            });
+        }
+    </script>
     @if (settings()->get('popup_status') == 1)
         <div class="modal" tabindex="-1" id="popModal">
             <div class="modal-dialog modal-lg modal-dialog-centered">
