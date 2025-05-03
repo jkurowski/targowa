@@ -64,11 +64,15 @@
     @endif
     <script type="text/javascript">
         $(document).ready(function() {
-            $(".validateForm").validationEngine({
-                validateNonVisibleFields: true,
-                updatePromptsPosition: true,
-                promptPosition: "topRight:-137px"
+            $("#slider ul").responsiveSlides({
+                auto:true,
+                pager:false,
+                nav:true,
+                timeout:8000,
+                random:false,
+                speed: 500
             });
+
             @if (settings()->get('popup_status') == 1)
                 const popModal = new bootstrap.Modal(document.getElementById('popModal'), {
                     keyboard: false

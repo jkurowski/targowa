@@ -323,8 +323,99 @@ button:focus,
 }
 #slider {
   width: 100%;
-  height: 830px;
   background: #a3a3a3;
+  position: relative;
+}
+#slider li {
+  position: relative;
+}
+#slider li .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#slider li h2 {
+  font-size: 43px;
+  font-family: "MuseoModerno", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+#slider li .slider-img {
+  padding-bottom: 20px;
+}
+#slider .rslides_nav {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 1px solid #978C7D;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 990;
+  justify-content: center;
+  align-items: center;
+}
+#slider .rslides_nav.prev {
+  left: 50px;
+}
+#slider .rslides_nav.next {
+  right: 50px;
+}
+@media (min-width: 2170px) {
+  #slider .container {
+    max-width: 1850px;
+  }
+}
+@media (min-width: 1880px) and (max-width: 2169px) {
+  #slider .container {
+    max-width: 1600px;
+  }
+}
+@media (min-width: 1620px) and (max-width: 1879px) {
+  #slider .container {
+    max-width: 1380px;
+  }
+}
+@media (min-width: 1380px) and (max-width: 1619px) {
+  #slider .container {
+    max-width: 1080px;
+  }
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides li:first-child {
+  display: block;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
 }
 /* Search form
 ================================================== */
@@ -335,6 +426,9 @@ button:focus,
   border-radius: 70px;
   box-shadow: inset 0 0 15px #232323;
   padding: 0 15px 0 60px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 900;
 }
 #search .input-select {
   margin-right: 30px;

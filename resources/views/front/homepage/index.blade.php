@@ -5,7 +5,71 @@
 @section('content')
     <main class="home">
         <div id="slider">
-
+            <ul class="mb-0 list-unstyled">
+                <li>
+                    <div class="container">
+                        <div class="row h-100">
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="slider-content pe-4">
+                                    <h2>Apartamenty w historycznym <br>centrum Łodzi - Targowa 49</h2>
+                                    <p>Apartamenty położone w najbardziej klimatycznej części Łodzi, Finezja sąsiaduje z miejscami, które budują tożsamość miasta – Księżym Młynem, Monopolis, pałacem Scheiblerów oraz słynną ulicą Piotrkowską.</p>
+                                    <p>&nbsp;</p>
+                                    <p>Tu przeszłość przemysłowej potęgi Łodzi spotyka się z nowoczesnym rytmem życia.</p>
+                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-end">
+                                <div class="slider-img w-100">
+                                    <img src="{{ asset('uploads/slider/slide-1.png') }}" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{{ asset('uploads/slider/slide-1-bg.jpg') }}" alt="" class="w-100">
+                </li>
+                <li>
+                    <div class="container">
+                        <div class="row h-100">
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="slider-content pe-4">
+                                    <h2>Kamienica <br>we współczesnym wydaniu</h2>
+                                    <p>Stylowe wnętrza, szlachetne detale i miejski charakter tworzą przestrzeń, która łączy przeszłość z teraźniejszością.</p>
+                                    <p>&nbsp;</p>
+                                    <p>Dla tych, którzy cenią jakość, ale żyją współcześnie.</p>
+                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-end">
+                                <div class="slider-img w-100">
+                                    <img src="{{ asset('uploads/slider/slide-2.png') }}" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{{ asset('uploads/slider/slide-2-bg.jpg') }}" alt="" class="w-100">
+                </li>
+                <li>
+                    <div class="container">
+                        <div class="row h-100">
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="slider-content pe-4">
+                                    <h2>Dwa światy – Twoje miejsce <br>między historią a nowoczesnością</h2>
+                                    <p> Z jednej strony elegancka architektura i ponadczasowy detal, z drugiej – komfort, funkcjonalność i styl życia na miarę dzisiejszych oczekiwań.</p>
+                                    <p>&nbsp;</p>
+                                    <p>Twój adres między tym, co było, a tym, co nadchodzi.</p>
+                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="slider-img w-100">
+                                    <img src="{{ asset('uploads/slider/slide-3.png') }}" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{{ asset('uploads/slider/slide-3-bg.jpg') }}" alt="" class="w-100">
+                </li>
+            </ul>
         </div>
 
         <div class="container">
