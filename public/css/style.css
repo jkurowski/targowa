@@ -216,6 +216,9 @@ li {
   font-family: "Figtree", sans-serif;
   font-weight: 300;
 }
+p.line-normal {
+  line-height: normal;
+}
 h1,
 h2,
 h3,

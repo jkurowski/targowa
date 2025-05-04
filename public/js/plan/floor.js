@@ -7,6 +7,21 @@ function onWindowResize() {
     }, resizeDelay);
 }
 
+$(function () {
+    $('#list').click(function () {
+        $('#list img').addClass('active');
+        $('#grid img').removeClass('active');
+        $('#offerList').removeClass('grid');
+        $('#offerList').addClass('list');
+    });
+    $('#grid').click(function () {
+        $('#grid img').addClass('active');
+        $('#list img').removeClass('active');
+        $('#offerList').removeClass('list');
+        $('#offerList').addClass('grid');
+    });
+});
+
 $(document).ready(function() {
 
 // Tooltip

@@ -35,16 +35,16 @@
                                 @foreach($properties as $r)
                                     @if($r->html)
                                         <area
-                                                shape="poly"
-                                                href="{{route('front.investment.property.index', ['slug' => $investment->slug, 'floor' => $r->floor_id, 'property' => $r->id])}}"
-                                                data-item="{{$r->id}}"
-                                                title="{{$r->name}}<br>Powierzchnia: <b class=fr>{{$r->area}} m<sup>2</sup></b><br />Pokoje: <b class=fr>{{$r->rooms}}</b><br><b>{{ roomStatus($r->status) }}</b>"
-                                                alt="{{$r->slug}}"
-                                                data-roomnumber="{{$r->number}}"
-                                                data-roomtype="{{$r->typ}}"
-                                                data-roomstatus="{{$r->status}}"
-                                                coords="{{cords($r->html)}}"
-                                                class="inline status-{{$r->status}}"
+                                            shape="poly"
+                                            href="{{route('front.investment.property.index', ['slug' => $investment->slug, 'floor' => $r->floor_id, 'property' => $r->id])}}"
+                                            data-item="{{$r->id}}"
+                                            title="{{$r->name}}<br>Powierzchnia: <b class=fr>{{$r->area}} m<sup>2</sup></b><br />Pokoje: <b class=fr>{{$r->rooms}}</b><br><b>{{ roomStatus($r->status) }}</b>"
+                                            alt="{{$r->slug}}"
+                                            data-roomnumber="{{$r->number}}"
+                                            data-roomtype="{{$r->typ}}"
+                                            data-roomstatus="{{$r->status}}"
+                                            coords="{{cords($r->html)}}"
+                                            class="inline status-{{$r->status}}"
                                         >
                                     @endif
                                 @endforeach
@@ -55,12 +55,12 @@
             </div>
         </div>
     </div>
-        @if($investment->floor->id <> 8)
+    @if($investment->floor->id <> 8)
         @include('front.investment_shared.filtr', ['area_range' => $investment->floor->area_range])
         @include('front.investment_shared.sort')
 
         @include('front.investment_shared.list', ['investment' => $investment])
-        @endif
+    @endif
 @endsection
 @push('scripts')
     <script src="{{ asset('/js/plan/imagemapster.js') }}" charset="utf-8"></script>
