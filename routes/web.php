@@ -70,7 +70,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
     )->name('gallery');
 
     Route::get(
-        'pakiety',
+        'pakiety-wykonczeniowe',
         'Static\IndexController@packages'
     )->name('packages');
 
