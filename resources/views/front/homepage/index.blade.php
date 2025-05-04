@@ -512,6 +512,64 @@
 
         <x-cta />
 
+        <section class="section-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6 text-center">
+                        <h2 class="section-title">Apartamenty stworzone <br>do świata finezji</h2>
+                        <p>Poznaj apartament skrojony na Twoje potrzeby: funkcjonalna przestrzeń, duże przeszklenia, przestronne tarasy i inteligentne rozwiązania Smart Home – wszystko z myślą o wygodziei codziennym komforcie.</p>
+                    </div>
+                </div>
+                <div class="row mt-5 mb-5">
+                    <div class="col-3">
+                        <a href="">
+                            <div class="ap-example">
+                                <div class="ap-example-hover">
+                                    <h3>apartament 1 pokojowy</h3>
+                                </div>
+                                <img src="{{ asset('../images/apartamenty-1-pokojowe.png') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="">
+                            <div class="ap-example">
+                                <div class="ap-example-hover">
+                                    <h3>apartament 2 pokojowy</h3>
+                                </div>
+                                <img src="{{ asset('../images/apartamenty-2-pokojowe.png') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="">
+                            <div class="ap-example">
+                                <div class="ap-example-hover">
+                                    <h3>apartament 3 pokojowy</h3>
+                                </div>
+                                <img src="{{ asset('../images/apartamenty-3-pokojowe.png') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="">
+                            <div class="ap-example">
+                                <div class="ap-example-hover">
+                                    <h3>apartament 4 pokojowy</h3>
+                                </div>
+                                <img src="{{ asset('../images/apartamenty-4-pokojowe.png') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="{{ route('front.developro.investment.index') }}" class="bttn-text text-white">Zobacz więcej <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <svg width="0" height="0">
             <defs>
                 <clipPath id="half-circle" clipPathUnits="objectBoundingBox">

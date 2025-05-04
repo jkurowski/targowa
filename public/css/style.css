@@ -819,6 +819,15 @@ button:focus,
 section {
   padding: 90px 0;
 }
+section.section-bg {
+  background: #222 url("../images/ap-rooms-bg.jpg") no-repeat center center;
+  background-size: cover;
+  margin-top: 90px;
+}
+section.section-bg .section-title,
+section.section-bg p {
+  color: white;
+}
 .section-title,
 .page-title {
   font-family: "MuseoModerno", sans-serif;
@@ -829,6 +838,37 @@ section {
 }
 .img-rounded {
   border-radius: 10px;
+}
+.ap-example {
+  position: relative;
+}
+.ap-example .ap-example-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url("../images/ap-white-op.png") no-repeat top left;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.ap-example .ap-example-hover:hover {
+  background: url("../images/ap-white-op.png") no-repeat bottom left;
+}
+.ap-example .ap-example-hover:hover h3 {
+  color: white;
+  margin-bottom: 85px;
+}
+.ap-example .ap-example-hover h3 {
+  text-transform: uppercase;
+  color: black;
+  font-family: "MuseoModerno", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 80px;
+  transition: margin 0.2s ease-in-out;
 }
 header {
   padding: 20px 0;
