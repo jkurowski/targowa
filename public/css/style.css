@@ -767,6 +767,31 @@ button:focus,
   color: white;
   font-weight: 600;
 }
+.gallery-photo-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.gallery .gallery-photo {
+  height: 22rem;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.gallery .glightbox:hover .gallery-photo {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /* Investor
 ================================================== */
 .investor-atuty img {

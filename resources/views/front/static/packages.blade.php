@@ -39,34 +39,57 @@
                 <div class="row mb-5">
                     <div class="col-lg-5 mx-auto text-center">
                         <h1 class="section-title">Wybierz pakiet</h1>
-                        <p class="section-desc">Zaprezentowane wizualizacje pakietu złotego i srebrnego, to przykładowy projekt wykonany na podstawie katalogu firmy.</p>
+                        <p>Zaprezentowane wizualizacje pakietu złotego i srebrnego, to przykładowy projekt wykonany na podstawie katalogu firmy.</p>
                     </div>
                 </div>
 
                 <div class="row mb-5">
                     <div class="col-12 text-center d-flex gap-3 justify-content-center">
-                        <a href="/uploads/katalog_pakiet_srebrny_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet srebrny&nbsp;&nbsp;</a>
-                        <a href="/uploads/katalog_pakiet_zloty_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet złoty&nbsp;&nbsp;</a>
-                        <a href="/uploads/katalog_pakiet_platynowy_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet platynowy&nbsp;&nbsp;</a>
+                        <a href="/uploads/katalog_pakiet_srebrny_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet srebrny</a>
+                        <a href="/uploads/katalog_pakiet_zloty_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet złoty</a>
+                        <a href="/uploads/katalog_pakiet_platynowy_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet platynowy</a>
                     </div>
                 </div>
 
                 <ul class="nav nav-tabs mb-4 d-flex justify-content-center" id="galleryTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="gallery1-tab" data-bs-toggle="tab" data-bs-target="#gallery1"
-                            type="button" role="tab" aria-controls="gallery1" aria-selected="true">
+                        <button class="nav-link active"
+                                id="gallery1-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#gallery1"
+                                type="button"
+                                role="tab"
+                                aria-controls="gallery1"
+                                aria-selected="true"
+                        >
                             Pakiet srebrny
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="gallery2-tab" data-bs-toggle="tab" data-bs-target="#gallery2"
-                            type="button" role="tab" aria-controls="gallery2" aria-selected="false" tabindex="-1">
+                        <button class="nav-link"
+                                id="gallery2-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#gallery2"
+                                type="button"
+                                role="tab"
+                                aria-controls="gallery2"
+                                aria-selected="false"
+                                tabindex="-1"
+                        >
                             Pakiet złoty
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="gallery3-tab" data-bs-toggle="tab" data-bs-target="#gallery3"
-                            type="button" role="tab" aria-controls="gallery3" aria-selected="false" tabindex="-1">
+                        <button class="nav-link"
+                                id="gallery3-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#gallery3"
+                                type="button"
+                                role="tab"
+                                aria-controls="gallery3"
+                                aria-selected="false"
+                                tabindex="-1"
+                        >
                             Pakiet platynowy
                         </button>
                     </li>
@@ -129,7 +152,7 @@
             </div>
         </section>
 
-        <section class="gallery sec-pad position-relative">
+        <section class="gallery pb-0 position-relative">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-5 mx-auto text-center">
@@ -145,40 +168,35 @@
                     <div class="col-lg-8 mb-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/z1.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/z1_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy">
+                                <img src="{{ asset('images/z1_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/z2.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/z2_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy">
+                                <img src="{{ asset('images/z2_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/z3.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/z3_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy">
+                                <img src="{{ asset('images/z3_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/z4.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/z4_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy">
+                                <img src="{{ asset('images/z4_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-photo-container">
                             <a href="{{ asset('images/z5.jpg') }}" class="glightbox">
-                                <img src="{{ asset('images/z5_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo"
-                                    loading="lazy">
+                                <img src="{{ asset('images/z5_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
