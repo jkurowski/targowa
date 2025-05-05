@@ -57,4 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     onScroll();
+
+    document.querySelectorAll('#triggermenu, .closemenu').forEach(el => {
+        el.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.toggle('openmenu');
+        });
+    });
 });

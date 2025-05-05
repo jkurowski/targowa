@@ -19,8 +19,8 @@
         <section class="first-sec gallery sec-pad position-relative pt-0">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
-                        <h2 class="section-title">Odkrywaj <br>okolice</h2>
+                    <div class="col-12 col-sm-10 col-lg-6 text-center">
+                        <h1 class="section-title">Odkrywaj <br>okolice</h1>
                         <p>Finezja znajduje się przy ul. Targowej 49 – w miejscu, gdzie można poczuć miasto, ale jednocześnie złapać dystans.</p>
                         <p>&nbsp;</p>
                         <p>W pobliżu znajdziesz wszystko, czego potrzeba – centrum handlowe Galeria Łódzka, restauracje, siłownie, szkoły, a także Muzeum Kinematografii. Sąsiedztwo terenów zielonych, takich jak park Źródliska, Księży Młyn pozwala odnaleźć równowagę – pośród miejskiego zgiełku, ale z dostępem do natury.</p>
@@ -30,9 +30,9 @@
 
             <div id="maplegend" class="container mt-5 pt-3">
                 <div class="row">
-                    <div class="col-6 pe-4">
-                        <div class="row border-bottom pb-3 mb-4">
-                            <div class="col-4">
+                    <div class="col-12 col-xl-6 order-2 order-xl-1 pe-4">
+                        <div class="row border-bottom pb-3 mb-4 justify-content-center">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-red">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -46,7 +46,7 @@
                                     <span>ZAKUPY</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-orange">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
@@ -56,7 +56,7 @@
                                     <span>REKREACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-blue">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31">
@@ -70,7 +70,7 @@
                                     <span>ZDROWIE</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-purple">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
@@ -83,7 +83,7 @@
                                     <span>EDUKACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-green">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
@@ -93,7 +93,7 @@
                                     <span>KOMUNIKACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-pink">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -119,33 +119,33 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="2 min" place="PARK ŹRÓDLISKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="9 min" place="GALERIA ŁÓDZKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="3 min" place="WYŻSZA SZKOŁA FILMOWA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="12 min" place="KSIĘŻY MŁYN" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="6 min" place="OFF PIOTRKOWSKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="7 min" place="MONOPOLIS" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="8 min" place="NOWE CENTRUM ŁÓDZI" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="9 min" place="POLITECHNIKA ŁÓDZKA" />
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-xl-6 order-1 order-xl-2 mb-4 mb-xl-0">
                         <div id="map" class="w-100"></div>
                     </div>
                 </div>
@@ -153,17 +153,17 @@
         </section>
 
         <div class="container">
-            <div class="row">
-                <div class="col-3">
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-3 mb-4">
                     <img src="https://placehold.co/600x450" alt="" class="img-rounded">
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3 mb-4">
                     <img src="https://placehold.co/600x450" alt="" class="img-rounded">
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3 mb-4">
                     <img src="https://placehold.co/600x450" alt="" class="img-rounded">
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-lg-3 mb-4">
                     <img src="https://placehold.co/600x450" alt="" class="img-rounded">
                 </div>
             </div>

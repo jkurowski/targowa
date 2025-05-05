@@ -1002,4 +1002,388 @@ footer li a {
 .pagebody footer {
   margin-top: 90px;
 }
+@media (max-width: 1419.98px) {
+  #maplegend .box-icon-holder {
+    height: 76px;
+    width: 50px;
+    margin-right: 15px;
+    background-size: cover;
+  }
+  .box-icon-holder svg.walk-icon {
+    width: 22px;
+    height: auto;
+  }
+  .box-icon-holder svg.bike-icon {
+    width: 35px;
+    height: auto;
+  }
+  #map {
+    min-height: 650px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .header-holder {
+    height: 140px;
+  }
+  #cta h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  #cta li svg {
+    margin-right: 10px;
+    width: 24px;
+  }
+  #cta li {
+    padding: 5px 0;
+  }
+  header li {
+    padding: 0 30px;
+  }
+  header img {
+    height: 100px;
+  }
+  .circle-holder {
+    border: 14px solid #fff;
+    width: 510px;
+    height: 510px;
+  }
+  #maplegend span {
+    font-size: 13px;
+  }
+  #maplegend span strong {
+    font-size: 19px;
+    display: block;
+  }
+  #maplegend .maplegend-grey span {
+    font-size: 11px;
+  }
+}
+/* end of 1399.98 */
+@media (max-width: 1199.98px) {
+  .header-holder {
+    height: 120px;
+  }
+  #cta .cta-content {
+    padding-left: 120px;
+  }
+  header li {
+    padding: 0 18px;
+  }
+  header img {
+    height: 80px;
+  }
+  header.fixed img {
+    height: 60px;
+  }
+  footer li a,
+  header li a {
+    font-size: 14px;
+  }
+  header li {
+    padding: 0 20px;
+  }
+  .circle-holder {
+    border: 11px solid #fff;
+    width: 428px;
+    height: 428px;
+  }
+}
+/* end of 1199.98 */
+@media (max-width: 991.98px) {
+  .header-holder {
+    height: 77px;
+  }
+  .footer-pm-logo {
+    width: 60px;
+  }
+  .footer-pzfd-logo {
+    width: 152px;
+  }
+  #cta .cta-content {
+    padding-left: 90px;
+  }
+  #cta h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  #cta li a {
+    font-size: 16px;
+  }
+  #cta li svg {
+    margin-right: 10px;
+    width: 19px;
+    height: 19px;
+  }
+  #cta li {
+    padding: 6px 0;
+    line-height: normal;
+  }
+  header {
+    padding: 12px 0;
+  }
+  header li {
+    padding: 0 12px;
+  }
+  header li a {
+    font-size: 13px;
+  }
+  header img {
+    height: 53px;
+  }
+  header.fixed img {
+    height: 53px;
+  }
+  .circle-holder {
+    border: 5px solid #fff;
+    width: 248px;
+    height: 248px;
+    margin: 0 auto 40px;
+  }
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .section-title {
+    font-size: 31px;
+    margin-bottom: 15px;
+  }
+  .section-title br {
+    display: none;
+  }
+  li,
+  p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  section {
+    padding: 50px 0;
+  }
+}
+/* end of 991.98 */
+@media (max-width: 767.98px) {
+  section {
+    padding: 30px 0;
+  }
+  .pagebody footer {
+    margin-top: 30px;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  footer .copyright {
+    margin-top: 30px;
+  }
+  footer .copyright p {
+    font-size: 12px;
+    color: #000;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  footer .footer-box {
+    margin-top: 30px;
+  }
+  footer h4 {
+    padding-bottom: 5px;
+  }
+  #cta .cta-content {
+    padding-left: 75px;
+  }
+  #cta h3 {
+    font-size: 19px;
+    padding-bottom: 5px;
+  }
+  #cta li a {
+    font-size: 15px;
+  }
+  #cta li svg {
+    margin-right: 7px;
+    width: 17px;
+    height: 17px;
+  }
+  #cta li {
+    padding: 4px 0;
+  }
+  header nav {
+    display: none;
+  }
+  header img,
+  header.fixed img {
+    height: 44px;
+  }
+  .col-mobile-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #triggermenu {
+    background: #978c7d;
+    padding: 5px 10px;
+    gap: 10px;
+    width: 101px;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .header-holder {
+    height: 68px;
+  }
+  .openmenu header nav {
+    display: block;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #978c7d;
+    z-index: 9999;
+  }
+  .openmenu header nav ul {
+    display: block !important;
+    padding-top: 30px;
+  }
+  .openmenu header nav ul img {
+    display: none;
+  }
+  .openmenu header nav ul li {
+    width: 100%;
+    padding: 13px 0;
+    justify-content: center;
+  }
+  .openmenu header nav ul li.list-item-logo {
+    display: none;
+  }
+  .openmenu header nav ul li a {
+    font-size: 24px;
+  }
+  .openmenu header nav ul li.active a {
+    color: #fff;
+  }
+  .openmenu header nav ul li.d-flex {
+    padding: 5px 0;
+  }
+  .openmenu header nav ul li.d-flex a {
+    font-size: 18px;
+  }
+  #maplegend .maplegend-box {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  #maplegend span strong {
+    font-size: 19px;
+    display: block;
+    line-height: 14px;
+    margin-top: 12px;
+  }
+  #maplegend .box-icon-holder {
+    margin: 0 auto;
+  }
+}
+/* end of 767.98 */
+@media (max-width: 575.98px) {
+  main {
+    padding: 0 15px;
+  }
+  .footer-finezja-logo {
+    width: 130px;
+    margin: 0 auto;
+  }
+  .footer-pm-logo {
+    width: 50px;
+  }
+  .footer-pzfd-logo {
+    width: 130px;
+  }
+  footer li svg {
+    display: none;
+  }
+  footer li {
+    line-height: 20px;
+  }
+  footer li,
+  footer p,
+  footer li a {
+    font-size: 15px;
+  }
+  .nav.nav-tabs {
+    padding: 13px;
+    border-radius: 10px;
+  }
+  #cta .cta-content {
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: center;
+  }
+  #cta h3 {
+    font-size: 28px;
+    padding-bottom: 15px;
+  }
+  #cta li {
+    padding: 7px 0;
+  }
+  #cta li a {
+    font-size: 18px;
+  }
+  #cta li svg {
+    margin-right: 9px;
+    width: 19px;
+    height: 19px;
+  }
+  .bttn-big {
+    padding: 0 30px;
+    margin: 20px 30px 0;
+    width: calc(100% - 60px);
+  }
+  .circle-holder {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 30px;
+  }
+  .contact-form {
+    border-radius: 10px;
+    padding: 20px 10px;
+  }
+  .contact-form .form-control {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .contact-form label.lab-anim {
+    font-size: 15px;
+    padding: 0 0 4px 10px;
+  }
+  .contact-form textarea {
+    height: 160px;
+  }
+  #map {
+    min-height: 440px;
+  }
+  #maplegend .box-icon-holder {
+    height: 53px;
+    width: 35px;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  #maplegend .maplegend-box {
+    margin-bottom: 11px;
+  }
+  #maplegend .box-icon-holder svg {
+    width: 22px;
+    height: auto;
+  }
+  #maplegend .box-icon-holder svg.walk-icon {
+    width: 16px;
+    height: auto;
+  }
+  #maplegend .box-icon-holder svg.bike-icon {
+    width: 25px;
+    height: auto;
+  }
+  #maplegend .maplegend-grey span {
+    font-size: 11px;
+    line-height: 12px;
+    margin-top: 6px;
+  }
+}
+/* end of 575.98 */
 /*# sourceMappingURL=style.css.map */

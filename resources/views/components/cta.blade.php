@@ -1,10 +1,10 @@
 <section class="pb-0">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
+            <div class="col-12 col-md-10">
                 <div id="cta">
                     <div class="row no-gutters">
-                        <div class="col-7">
+                        <div class="col-12 col-sm-7">
                             <div class="cta-content d-flex h-100 align-items-center">
                                 <div>
                                     <h3>Zapytaj o ofertę</h3>
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="d-none d-sm-block col-5">
                             <img src="{{ asset('../images/cta-woman.png') }}" alt="Opis zdjęcia" width="498" height="404">
                         </div>
                     </div>

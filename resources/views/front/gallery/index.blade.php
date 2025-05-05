@@ -17,9 +17,9 @@
 
         <section class="pt-0">
             <div class="container">
-                <div class="row mb-5 justify-content-center">
-                    <div class="col-4 text-center">
-                        <h1 class="page-title">Galeria</h1>
+                <div class="row mb-2 mb-sm-5 justify-content-center">
+                    <div class="col-12 col-sm-10 col-lg-4 text-center">
+                        <h1 class="section-title">Galeria</h1>
                     </div>
                 </div>
 

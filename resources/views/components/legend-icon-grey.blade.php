@@ -5,7 +5,7 @@
 
 <div class="maplegend-box maplegend-grey">
     <div class="box-icon-holder">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="46" viewBox="0 0 26 46">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="46" viewBox="0 0 26 46" class="walk-icon">
             <g transform="translate(-7.168 -1.356)">
                 <path d="M20.667,20.408l3.158,1.056a1.957,1.957,0,0,0,1.78-3.47l-4.75-2.629-2.966-4.576" transform="translate(5.911 5.167)" fill="none" stroke="#978c7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
                 <circle cx="4.747" cy="4.747" r="4.747" transform="translate(15.638 2.006)" fill="none" stroke="#978c7d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
@@ -14,5 +14,5 @@
             </g>
         </svg>
     </div>
-    <span><strong>{{ $time }}</strong>{{ strtoupper($place) }}</span>
+    <span><strong>{{ $time }}</strong><span class="d-block">{{ strtoupper($place) }}</span></span>
 </div>
