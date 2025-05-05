@@ -511,7 +511,13 @@
         </section>
 
         <x-cta />
-
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="half-circle" clipPathUnits="objectBoundingBox">
+                    <path d="M0,0.375 A0.5,0.375 0 0,1 1,0.375 L1,1 L0,1 Z" />
+                </clipPath>
+            </defs>
+        </svg>
         <section class="section-bg">
             <div class="container">
                 <div class="row justify-content-center">
@@ -569,13 +575,5 @@
                 </div>
             </div>
         </section>
-
-        <svg width="0" height="0">
-            <defs>
-                <clipPath id="half-circle" clipPathUnits="objectBoundingBox">
-                    <path d="M0,0.375 A0.5,0.375 0 0,1 1,0.375 L1,1 L0,1 Z" />
-                </clipPath>
-            </defs>
-        </svg>
     </main>
 @endsection

@@ -864,6 +864,10 @@ section.section-bg p {
   color: black;
   margin-bottom: 30px;
 }
+h2.section-title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
 .img-rounded {
   border-radius: 10px;
 }
@@ -944,6 +948,10 @@ header.fixed img {
 }
 footer {
   padding-top: 90px;
+  background: #fff;
+  -webkit-box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
 }
 footer .footer-box {
   margin-top: 40px;
@@ -992,10 +1000,6 @@ footer li a {
   font-weight: 400;
 }
 .pagebody footer {
-  background: #fefefc;
-  -webkit-box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px -4px 5px -4px rgba(0, 0, 0, 0.25);
   margin-top: 90px;
 }
 /*# sourceMappingURL=style.css.map */

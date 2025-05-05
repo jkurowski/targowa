@@ -65,6 +65,11 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
     )->name('amenities');
 
     Route::get(
+        'polityka-prywatnosci',
+        'Static\IndexController@polityka'
+    )->name('polityka');
+
+    Route::get(
         'galeria',
         'Static\IndexController@gallery'
     )->name('gallery');
