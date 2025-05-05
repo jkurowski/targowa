@@ -155,16 +155,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6 col-lg-3 mb-4">
-                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
+                    <img src="{{ asset('images/lokalizacja-1.jpg') }}" width="322" height="241" alt="" class="img-rounded">
                 </div>
                 <div class="col-6 col-lg-3 mb-4">
-                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
+                    <img src="{{ asset('images/lokalizacja-2.jpg') }}" width="322" height="241" alt="" class="img-rounded">
                 </div>
                 <div class="col-6 col-lg-3 mb-4">
-                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
+                    <img src="{{ asset('images/lokalizacja-3.jpg') }}" width="322" height="241" alt="" class="img-rounded">
                 </div>
                 <div class="col-6 col-lg-3 mb-4">
-                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
+                    <img src="{{ asset('images/lokalizacja-4.jpg') }}" width="322" height="241" alt="" class="img-rounded">
                 </div>
             </div>
         </div>
