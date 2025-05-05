@@ -99,20 +99,20 @@
                                                 <div class="row align-items-center">
                                                     <div class="col-lg-4">
                                                         <div class="apartment-box__name">
-                                                            <p class="">{{$r->name_list}}</p>
-                                                            <p class="mb-0">Hi {{$r->number}}</p>
+                                                            <p>{{$r->name_list}}</p>
+                                                            <p class="mb-0">{{$r->number}}</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <div class="apartment-box__details row my-4">
                                                             <div class="col-sm-4 pe-0">
-                                                                <p class="">Metraż: {{$r->area}} m<sup>2</sup></p>
+                                                                <p>Metraż: {{$r->area}} m<sup>2</sup></p>
                                                             </div>
                                                             <div class="col-sm-4 text-center">
-                                                                <p class="">Pokoje: {{$r->rooms}}</p>
+                                                                <p>Pokoje: {{$r->rooms}}</p>
                                                             </div>
                                                             <div class="col-sm-4">
-                                                                <p class="">{{$r->floor->name}}</p>
+                                                                <p>{{$r->floor->name}}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -147,7 +147,7 @@
                                                                 width="" height="60" loading="lazy">
                                                         </div>
                                                         <div class="apartment-box__name">
-                                                            <p class="">{{ $r->name }}</p>
+                                                            <p>{{ $r->name }}</p>
                                                         </div>
                                                         <div class="apartment-box__details row">
                                                             <div class="col-12">
