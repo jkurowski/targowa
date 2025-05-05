@@ -20,7 +20,6 @@
                 <div class="row mb-5 justify-content-center">
                     <div class="col-4 text-center">
                         <h1 class="page-title">Galeria</h1>
-                        <p class="page-title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
 
