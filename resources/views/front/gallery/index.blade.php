@@ -38,20 +38,6 @@
                     @foreach($galleries as $key => $g)
                         <div class="tab-pane @if($key == 0) active @endif" id="gallery{{ $g->id }}" role="tabpanel" aria-labelledby="gallery{{ $g->id }}-tab">
                             <div class="row justify-content-center">
-                                <div class="col-4 mt-4">
-                                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
-                                </div>
-                                <div class="col-4 mt-4">
-                                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
-                                </div>
-                                <div class="col-4 mt-4">
-                                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
-                                </div>
-                                <div class="col-4 mt-4">
-                                    <img src="https://placehold.co/600x450" alt="" class="img-rounded">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
                                 @foreach($g->photos as $p)
                                     <div class="col-lg-4 mt-4">
                                         <div class="border-gradient-photo">
@@ -59,7 +45,7 @@
                                                 <picture>
                                                     <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$p->file_webp) }}">
                                                     <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}">
-                                                    <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293">
+                                                    <img src="{{asset('uploads/gallery/images/thumbs/'.$p->file) }}" alt="{{ $p->name }}" width="520" height="293" class="img-rounded">
                                                 </picture>
                                             </a>
                                         </div>
