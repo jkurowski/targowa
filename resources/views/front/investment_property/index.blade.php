@@ -18,7 +18,7 @@
 
         <section class="pt-0">
             <div class="container">
-                <nav class="pt-4 pb-5 single-apartment-nav">
+                <nav class="pt-0 pt-sm-4 pb-4 pb-sm-5 single-apartment-nav">
                     <div class="row">
                         <div class="col-12 col-sm-6 d-flex align-items-center">
                             @if ($prev)
