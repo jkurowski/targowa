@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <h1 class="section-title">{{ $property->name_list }} {{ $property->number }}</h1>
+                        <h1 class="section-title">{{ $property->name_list }} <span class="text-uppercase">{{ $property->number }}</span></h1>
                         <div class="row my-5 apartment-details">
                             <div class="col-4">
                                 <p>Metraż: {{ $property->area }} m<sup>2</sup></p>
