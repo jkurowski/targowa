@@ -46,7 +46,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'restrictIp', 'as' => 'fro
         'kontakt',
         'ContactController@index'
     )->name('contact.index');
-    Route::post('/kontakt', 'ContactController@contact')->name('contact.form');
+    Route::post('/kontakt', 'ContactController@contact')->name('contact.send');
     Route::post('/kontakt/{property}', 'ContactController@property')->name('contact.property');
 
     Route::get(

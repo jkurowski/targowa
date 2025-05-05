@@ -34,7 +34,7 @@ class InvestmentPropertyController extends Controller
             ->where('properties.id', '<>', $property->id)
             ->join('floors', 'properties.floor_id', '=', 'floors.id')
             ->inRandomOrder()
-            ->limit(6)
+            ->limit(4)
             ->get();
 
         return view('front.investment_property.index', [
