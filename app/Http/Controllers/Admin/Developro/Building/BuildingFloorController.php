@@ -101,7 +101,21 @@ class BuildingFloorController extends Controller
         $newFloor->file_webp = '';
         $newFloor->number = $floor->number + 1;
         $newFloor->position = $floor->position + 1;
+        $newFloor->name = $newFloor->name.' - kopia';
         $newFloor->save();
+
+        if($floor->properties->count() > 0){
+            foreach($floor->properties as $p) {
+                $newProperty = $p->replicate();
+                $newProperty->name = $p->name.' - kopia';
+                $newProperty->file = '';
+                $newProperty->file_webp = '';
+                $newProperty->file_pdf = '';
+                $newProperty->floor_id = $newFloor->id;
+                $newProperty->save();
+            }
+        }
+
         return redirect()->route('admin.developro.investment.building.floors.index', [$investment, $building])->with('success', 'Pietro skopiowane');
     }
 
