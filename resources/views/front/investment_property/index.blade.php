@@ -20,14 +20,14 @@
             <div class="container">
                 <nav class="pt-4 pb-5 single-apartment-nav">
                     <div class="row">
-                        <div class="col-6 d-flex align-items-center">
+                        <div class="col-12 col-sm-6 d-flex align-items-center">
                             @if ($prev)
-                                <a href="{{ route('front.developro.investment.property', [$prev, Str::slug($prev->name), $floor->number, number2RoomsName($prev->rooms, true), round(floatval($prev->area), 2) . '-m2']) }}" class="bttn-big">{{ $prev->name }}</a>
+                                <a href="{{ route('front.developro.investment.property', [$prev, Str::slug($prev->name), $floor->number, number2RoomsName($prev->rooms, true), round(floatval($prev->area), 2) . '-m2']) }}" class="bttn-big mt-2">{{ $prev->name }}</a>
                             @endif
                         </div>
-                        <div class="col-6 d-flex align-items-center justify-content-end">
+                        <div class="col-12 col-sm-6 d-flex align-items-center justify-content-end">
                             @if ($next)
-                                <a href="{{ route('front.developro.investment.property', [$next, Str::slug($next->name), $floor->number, number2RoomsName($next->rooms, true), round(floatval($next->area), 2) . '-m2']) }}" class="bttn-big">{{ $next->name }}</a>
+                                <a href="{{ route('front.developro.investment.property', [$next, Str::slug($next->name), $floor->number, number2RoomsName($next->rooms, true), round(floatval($next->area), 2) . '-m2']) }}" class="bttn-big mt-2">{{ $next->name }}</a>
                             @endif
                         </div>
                     </div>
