@@ -37,14 +37,14 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <h1 class="section-title">{{ $property->name_list }} <span class="text-uppercase">{{ $property->number }}</span></h1>
-                        <div class="row my-5 apartment-details">
-                            <div class="col-4">
+                        <div class="row my-3 my-sm-5 apartment-details">
+                            <div class="col-12 col-sm-4">
                                 <p>Metraż: {{ $property->area }} m<sup>2</sup></p>
                             </div>
-                            <div class="col-4 apartment-details-middle">
+                            <div class="col-12 col-sm-4 apartment-details-middle">
                                 <p>Pokoje: {{ $property->rooms }}</p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-sm-4">
                                 <p>Piętro: {{ $property->floor->number }}</p>
                             </div>
                         </div>
