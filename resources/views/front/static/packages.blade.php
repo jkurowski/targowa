@@ -18,14 +18,14 @@
         <section class="first-sec packages-sec position-relative sec-pad">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-12 col-md-6 d-flex align-items-center">
                         <div>
                             <h1 class="section-title">Pakiety wykończenia</h1>
                             <p>Współpracujemy z firmą WS Budownictwo, która może zająć się wykończeniem Twojego apartamentu pod klucz. Decydując się na usługi tego typu firmy jesteś w stanie oszczędzić wiele czasu i stresu. Fachowcy zajmą się projektem, dostawami, zakupami, zarządzaniem budżetem i remontem. Wprowadź się do swojego wymarzonego apartamentu w terminie i w dobrym nastroju.</p>
                             <a href="{{ asset('uploads/broszura-informacyjna.pdf') }}" target="_blank" class="bttn-big">Ulotka</a>
                         </div>
                     </div>
-                    <div class="col-6 d-flex align-items-center justify-content-end">
+                    <div class="col-6 d-none d-md-flex align-items-center justify-content-end">
                         <div class="circle-holder">
                             <img src="{{ asset('images/pakiety.png') }}" alt="">
                         </div>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="row mb-5">
-                    <div class="col-12 text-center d-flex gap-3 justify-content-center">
+                    <div class="col-12 text-center d-flex gap-3 justify-content-center flex-wrap flex-lg-nowrap">
                         <a href="/uploads/katalog_pakiet_srebrny_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet srebrny</a>
                         <a href="/uploads/katalog_pakiet_zloty_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet złoty</a>
                         <a href="/uploads/katalog_pakiet_platynowy_2025.pdf" target="_blank" class="bttn-big mt-0">Pobierz katalog: pakiet platynowy</a>
