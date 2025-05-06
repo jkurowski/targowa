@@ -9,7 +9,7 @@
                 <li>
                     <div class="container">
                         <div class="row h-100">
-                            <div class="col-6 d-flex align-items-center">
+                            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-start">
                                 <div class="slider-content pe-4">
                                     <h2>Apartamenty w historycznym <br>centrum Łodzi - Targowa 49</h2>
                                     <p>Apartamenty położone w najbardziej klimatycznej części Łodzi, Finezja sąsiaduje z miejscami, które budują tożsamość miasta – Księżym Młynem, Monopolis, pałacem Scheiblerów oraz słynną ulicą Piotrkowską.</p>
@@ -18,19 +18,20 @@
                                     <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex align-items-end">
+                            <div class="col-6 d-none d-lg-flex align-items-end">
                                 <div class="slider-img w-100">
                                     <img src="{{ asset('uploads/slider/slide-1.png') }}" alt="" class="w-100" width="580" height="589">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-1-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-1-bg.jpg') }}" alt="" class="d-none d-sm-block w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-1-bg-mobile.jpg') }}" alt="" class="d-block d-sm-none w-100" width="580" height="599">
                 </li>
                 <li>
                     <div class="container">
                         <div class="row h-100">
-                            <div class="col-6 d-flex align-items-center">
+                            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-start">
                                 <div class="slider-content pe-4">
                                     <h2>Kamienica <br>we współczesnym wydaniu</h2>
                                     <p>Stylowe wnętrza, szlachetne detale i miejski charakter tworzą przestrzeń, która łączy przeszłość z teraźniejszością.</p>
@@ -39,19 +40,20 @@
                                     <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex align-items-end">
+                            <div class="col-6 d-none d-lg-flex align-items-end">
                                 <div class="slider-img w-100">
                                     <img src="{{ asset('uploads/slider/slide-2.png') }}" alt="" class="w-100" width="580" height="589">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-2-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-2-bg.jpg') }}" alt="" class="d-none d-sm-block w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-2-bg-mobile.jpg') }}" alt="" class="d-block d-sm-none w-100" width="580" height="599">
                 </li>
                 <li>
                     <div class="container">
                         <div class="row h-100">
-                            <div class="col-6 d-flex align-items-center">
+                            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-start">
                                 <div class="slider-content pe-4">
                                     <h2>Dwa światy – Twoje miejsce <br>między historią a nowoczesnością</h2>
                                     <p> Z jednej strony elegancka architektura i ponadczasowy detal, z drugiej – komfort, funkcjonalność i styl życia na miarę dzisiejszych oczekiwań.</p>
@@ -60,24 +62,25 @@
                                     <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex align-items-center">
+                            <div class="col-6 d-none d-lg-flex align-items-center">
                                 <div class="slider-img w-100">
                                     <img src="{{ asset('uploads/slider/slide-3.png') }}" alt="" class="w-100" width="580" height="502">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <img src="{{ asset('uploads/slider/slide-3-bg.jpg') }}" alt="" class="w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-3-bg.jpg') }}" alt="" class="d-none d-sm-block w-100" width="1920" height="733">
+                    <img src="{{ asset('uploads/slider/slide-3-bg-mobile.jpg') }}" alt="" class="d-block d-sm-none w-100" width="580" height="599">
                 </li>
             </ul>
         </div>
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-12 col-xl-10 col-xxl-8">
                     <div id="search">
-                        <form action="" method="get" class="d-flex align-items-center h-100">
-                            <div class="col">
+                        <form action="" method="get" class="d-flex align-items-center h-100 row">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputRooms" class="form-label">Ilość pokoi</label>
                                     <select id="inputRooms" class="form-select" name="s_pokoje">
@@ -86,7 +89,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputArea" class="form-label">Metraż</label>
                                     <select id="inputArea" class="form-select" name="s_metry">
@@ -95,7 +98,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputFloor" class="form-label">Piętro</label>
                                     <select id="inputFloor" class="form-select" name="floor">
@@ -104,7 +107,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-end">
+                            <div class="col-12 col-lg-3 d-flex justify-content-end">
                                 <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="34.168" height="34.177" viewBox="0 0 34.168 34.177"><path d="M38.267,36.2l-9.5-9.592a13.543,13.543,0,1,0-2.055,2.082l9.441,9.53a1.462,1.462,0,0,0,2.064.053A1.472,1.472,0,0,0,38.267,36.2ZM18.123,28.8a10.694,10.694,0,1,1,7.563-3.132A10.628,10.628,0,0,1,18.123,28.8Z" transform="translate(-4.5 -4.493)" fill="#978c7d"/></svg>
                                 </button>
                             </div>

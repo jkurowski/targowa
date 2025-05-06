@@ -388,6 +388,57 @@ button:focus,
   #slider .container {
     max-width: 1080px;
   }
+  #slider li h2 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+  #slider li p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  #slider li .bttn-big {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1379px) {
+  #slider .container {
+    max-width: 780px;
+  }
+  #slider li h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  #slider li p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #slider li .bttn-big {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1019px) {
+  #slider .container {
+    max-width: 780px;
+  }
+  #slider li h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  #slider li p {
+    display: none;
+  }
+  #slider li .bttn-big {
+    margin-top: 15px;
+  }
+  #slider .rslides_nav.next {
+    right: 0;
+  }
+  #slider .rslides_nav.prev {
+    left: 0;
+  }
 }
 .rslides {
   position: relative;
@@ -1123,6 +1174,9 @@ footer li a {
     font-size: 34px;
     line-height: 37px;
   }
+  #search {
+    margin-top: 30px;
+  }
 }
 /* end of 1399.98 */
 @media (max-width: 1199.98px) {
@@ -1260,6 +1314,21 @@ footer li a {
   }
   .custom-clip {
     display: none;
+  }
+  #search {
+    height: auto;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  #search button {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: none;
+    background: #fff;
+    margin-top: 20px;
+    padding: 15px 0;
   }
 }
 /* end of 991.98 */
@@ -1409,6 +1478,18 @@ footer li a {
   .ap-example .ap-example-hover,
   .ap-example .ap-example-hover:hover {
     background-size: 201px auto;
+  }
+  #search .input-select {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #search .input-select select {
+    border: 1px solid #fff;
+    padding-left: 15px;
+  }
+  #search button {
+    margin-top: 0;
   }
 }
 /* end of 767.98 */
@@ -1584,6 +1665,24 @@ footer li a {
     width: 60px;
     height: 35px;
     background-size: 60px auto;
+  }
+  .box-icon-title-text .box-icon-holder {
+    margin: 10px auto;
+  }
+  .box-icon-title-text h3 {
+    font-size: 12px;
+  }
+  #slider {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px);
+  }
+  #slider h2 br {
+    display: none;
+  }
+  #slider .rslides_nav {
+    top: auto;
+    bottom: 0;
   }
 }
 /* end of 575.98 */
