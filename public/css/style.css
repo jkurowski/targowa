@@ -665,6 +665,17 @@ button:focus,
   font-weight: 500;
   padding: 0 0 6px 30px;
 }
+.rodo p,
+.form-check p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.rodo {
+  margin-bottom: 16px;
+}
+.form-check {
+  margin-left: 10px;
+}
 /* Mapa
 ================================================== */
 #map {
