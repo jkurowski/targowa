@@ -28,13 +28,10 @@ class IndexController extends Controller
 
         $array = Inline::getElements(3);
 
-        $similar = Property::select('properties.*', 'floors.number as floor_number')
-            ->where('properties.status', '=', 1)
-            ->where('properties.id', '<>', 4)
-            ->join('floors', 'properties.floor_id', '=', 'floors.id')
-            ->inRandomOrder()
-            ->limit(6)
-            ->get();
+        $one_room = Property::whereStatus(1)->whereRooms(1)->inRandomOrder()->first();
+        $two_room = Property::whereStatus(1)->whereRooms(2)->inRandomOrder()->first();
+        $tree_room = Property::whereStatus(1)->whereRooms(3)->inRandomOrder()->first();
+        $four_room = Property::whereStatus(1)->whereRooms(4)->inRandomOrder()->first();
 
         if(settings()->get("popup_status") == "1") {
             if(settings()->get("popup_mode") == "1") {
@@ -62,7 +59,10 @@ class IndexController extends Controller
             'isAdmin',
             'images',
             'markers',
-            'similar'
+            'one_room',
+            'two_room',
+            'tree_room',
+            'four_room'
         ));
     }
 }

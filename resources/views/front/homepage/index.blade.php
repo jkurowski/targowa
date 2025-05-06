@@ -143,7 +143,7 @@
                                                 </svg>
                                             </div>
                                             <h3>Nowoczesne i komfortowe rozwiązania</h3>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                            <p class="d-none">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -160,7 +160,7 @@
                                                 </svg>
                                             </div>
                                             <h3>Świetna lokalizacja</h3>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                            <p class="d-none">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -172,7 +172,7 @@
                                                 </svg>
                                             </div>
                                             <h3>Funkcjonalne rozkłady</h3>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                            <p class="d-none">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +201,7 @@
                 </div>
             </div>
 
-            <div id="maplegend" class="container mt-5 pt-3">
+            <div id="maplegend" class="container mt-4 mt-sm-5 pt-0 pt-sm-3">
                 <div class="row">
                     <div class="col-12 col-xl-6 order-2 order-xl-1 pe-4">
                         <div class="row border-bottom pb-3 mb-4 justify-content-center">
@@ -344,27 +344,72 @@
             </div>
         </section>
 
-        <section>
+        <section class="section-mobile">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
+                    <div class="col-12 col-lg-10 col-xl-6 text-center">
                         <h2 class="section-title">Miejsce, które <br>definiuje twój styl</h2>
                         <p>Oferujemy apartamenty 1,2,3 i 4 pokojowe o najlepszych układach, w metrażach od 27 m<sup>2</sup> do 86 m<sup>2</sup> z dużymi i przestronnymi tarasami i balkonami.</p>
                     </div>
                 </div>
 
                 <div class="row pt-5">
-                    <div class="col-3">
+                    <div class="col-6 col-lg-3">
                         <div class="carousel-room-item">
-                            <h2 class="text-center"><a href="#">Nazwa <br>numer</a></h2>
+                            <h2 class="text-center"><a href="{{ route('front.developro.investment.property', [$one_room, Str::slug($one_room->name), floorLevel($one_room->floor->number, true), number2RoomsName($one_room->rooms, true), round(floatval($one_room->area), 2) . '-m2']) }}">{{ $one_room->name_list }} <br>{{ $one_room->number }}</a></h2>
                             <ul class="list-unstyled">
-                                <li>Metraż: <span>20 m<sup>2</sup></span></li>
-                                <li>Pokoje: <span>20</span></li>
-                                <li>Piętro: <span>20</span></li>
+                                <li>Metraż: <span>{{ $one_room->area }} m<sup>2</sup></span></li>
+                                <li>Pokoje: <span>{{ $one_room->rooms }}</span></li>
+                                <li>Piętro: <span>{{ $one_room->floor->number }}</span></li>
                             </ul>
 
                             <div class="text-center">
-                                <a href="#" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
+                                <a href="{{ route('front.developro.investment.property', [$one_room, Str::slug($one_room->name), floorLevel($one_room->floor->number, true), number2RoomsName($one_room->rooms, true), round(floatval($one_room->area), 2) . '-m2']) }}" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="carousel-room-item">
+                            <h2 class="text-center"><a href="{{ route('front.developro.investment.property', [$two_room, Str::slug($two_room->name), floorLevel($two_room->floor->number, true), number2RoomsName($two_room->rooms, true), round(floatval($two_room->area), 2) . '-m2']) }}">{{ $two_room->name_list }} <br>{{ $two_room->number }}</a></h2>
+                            <ul class="list-unstyled">
+                                <li>Metraż: <span>{{ $two_room->area }} m<sup>2</sup></span></li>
+                                <li>Pokoje: <span>{{ $two_room->rooms }}</span></li>
+                                <li>Piętro: <span>{{ $two_room->floor->number }}</span></li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="{{ route('front.developro.investment.property', [$two_room, Str::slug($two_room->name), floorLevel($two_room->floor->number, true), number2RoomsName($two_room->rooms, true), round(floatval($two_room->area), 2) . '-m2']) }}" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-5 mt-lg-0">
+                        <div class="carousel-room-item">
+                            <h2 class="text-center"><a href="{{ route('front.developro.investment.property', [$tree_room, Str::slug($tree_room->name), floorLevel($tree_room->floor->number, true), number2RoomsName($tree_room->rooms, true), round(floatval($tree_room->area), 2) . '-m2']) }}">{{ $tree_room->name_list }} <br>{{ $tree_room->number }}</a></h2>
+                            <ul class="list-unstyled">
+                                <li>Metraż: <span>{{ $tree_room->area }} m<sup>2</sup></span></li>
+                                <li>Pokoje: <span>{{ $tree_room->rooms }}</span></li>
+                                <li>Piętro: <span>{{ $tree_room->floor->number }}</span></li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="{{ route('front.developro.investment.property', [$tree_room, Str::slug($tree_room->name), floorLevel($tree_room->floor->number, true), number2RoomsName($tree_room->rooms, true), round(floatval($tree_room->area), 2) . '-m2']) }}" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 mt-5 mt-lg-0">
+                        <div class="carousel-room-item">
+                            <h2 class="text-center"><a href="{{ route('front.developro.investment.property', [$four_room, Str::slug($four_room->name), floorLevel($four_room->floor->number, true), number2RoomsName($four_room->rooms, true), round(floatval($four_room->area), 2) . '-m2']) }}">{{ $four_room->name_list }} <br>{{ $four_room->number }}</a></h2>
+                            <ul class="list-unstyled">
+                                <li>Metraż: <span>{{ $four_room->area }} m<sup>2</sup></span></li>
+                                <li>Pokoje: <span>{{ $four_room->rooms }}</span></li>
+                                <li>Piętro: <span>{{ $four_room->floor->number }}</span></li>
+                            </ul>
+
+                            <div class="text-center">
+                                <a href="{{ route('front.developro.investment.property', [$four_room, Str::slug($four_room->name), floorLevel($four_room->floor->number, true), number2RoomsName($four_room->rooms, true), round(floatval($four_room->area), 2) . '-m2']) }}" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
                                 </a>
                             </div>
                         </div>
@@ -382,7 +427,7 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
+                    <div class="col-12 col-lg-10 col-xl-6 text-center">
                         <h2 class="section-title">Zajrzyj <br>do świata finezji</h2>
                         <p>Zobacz przestrzeń, która została zaprojektowana <br>z myślą o tych, którzy cenią estetykę i jakość.</p>
                     </div>

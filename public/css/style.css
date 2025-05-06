@@ -1119,6 +1119,10 @@ footer li a {
   header.fixed li ul {
     top: 60px;
   }
+  .carousel-room-item h2 {
+    font-size: 34px;
+    line-height: 37px;
+  }
 }
 /* end of 1399.98 */
 @media (max-width: 1199.98px) {
@@ -1163,6 +1167,11 @@ footer li a {
   }
   header.fixed li ul {
     top: 50px;
+  }
+  .carousel-room-item h2 {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 500;
   }
 }
 /* end of 1199.98 */
@@ -1222,7 +1231,8 @@ footer li a {
     line-height: 34px;
     margin-bottom: 15px;
   }
-  .section-title br {
+  .section-title br,
+  p br {
     display: none;
   }
   li,
@@ -1542,9 +1552,42 @@ footer li a {
     width: 206px;
     height: 206px;
   }
+  .section-mobile {
+    padding-top: 0;
+  }
+  .carousel-room-item {
+    padding: 15px;
+    margin: 10px 0;
+  }
+  .carousel-room-item h2 {
+    font-size: 19px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .carousel-room-item ul li {
+    font-size: 12px;
+  }
+  .carousel-room-item ul {
+    margin: 10px 0;
+  }
+  .carousel-room-item:before {
+    bottom: 100%;
+    top: -25px;
+    width: 60px;
+    height: 35px;
+    background-size: 60px auto;
+  }
+  .carousel-room-item:after {
+    top: 100%;
+    bottom: -23px;
+    transform: rotate(180deg);
+    width: 60px;
+    height: 35px;
+    background-size: 60px auto;
+  }
 }
 /* end of 575.98 */
-@media (max-width: 359.98px) {
+@media (max-width: 379.98px) {
   .ap-example {
     width: 126px;
     margin: 0 auto;
@@ -1558,6 +1601,10 @@ footer li a {
   .ap-example .ap-example-hover:hover h3 {
     font-size: 15px;
     margin-bottom: 32px;
+  }
+  .carousel-room-item h2 {
+    font-size: 18px;
+    line-height: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

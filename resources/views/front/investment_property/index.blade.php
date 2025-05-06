@@ -86,7 +86,7 @@
                     </div>
                     <div class="row">
                         @foreach ($similar as $r)
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <div class="carousel-room-item">
                                 <h2 class="text-center"><a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}">{{ $r->name_list }} <br>{{$r->number}}</a></h2>
                                 <ul class="list-unstyled">
