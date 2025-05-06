@@ -483,7 +483,7 @@
                 </div>
                 <div class="row mt-5 mb-5 justify-content-center">
                     <div class="col-6 col-sm-5 col-lg-3">
-                        <a href="">
+                        <a href="{{ route('front.developro.investment.index') }}?s_pokoje=1#offerList">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
                                     <h3>apartament 1 pokojowy</h3>
@@ -493,7 +493,7 @@
                         </a>
                     </div>
                     <div class="col-6 col-sm-5 col-lg-3">
-                        <a href="">
+                        <a href="{{ route('front.developro.investment.index') }}?s_pokoje=2#offerList">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
                                     <h3>apartament 2 pokojowy</h3>
@@ -503,7 +503,7 @@
                         </a>
                     </div>
                     <div class="col-6 col-sm-5 col-lg-3 mt-4 mt-lg-0">
-                        <a href="">
+                        <a href="{{ route('front.developro.investment.index') }}?s_pokoje=3#offerList">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
                                     <h3>apartament 3 pokojowy</h3>
@@ -513,7 +513,7 @@
                         </a>
                     </div>
                     <div class="col-6 col-sm-5 col-lg-3 mt-4 mt-lg-0">
-                        <a href="">
+                        <a href="{{ route('front.developro.investment.index') }}?s_pokoje=4#offerList">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
                                     <h3>apartament 4 pokojowy</h3>
