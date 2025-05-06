@@ -8,7 +8,7 @@
                     <div class="col-6 pl-0">
                         <h4 class="page-title row"><i class="fe-inbox"></i>RODO: regułki</h4>
                     </div>
-                    <div class="col-6 d-flex justify-content-end align-items-center form-group-submit">
+                    <div class="col-6 d-flex justify-content-end align-items-center form-group-submit d-none">
                         <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary">Dodaj regułkę</a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                                 <td>{{ $p->created_at }}</td>
                                 <td>{{ $p->updated_at }}</td>
                                 <td class="option-120">
-                                    <div class="btn-group">
+                                    <div class="btn-group d-none">
                                         <a href="{{route('admin.rodo.rules.edit', $p)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
                                         <form method="POST" action="{{route('admin.rodo.rules.destroy', $p)}}">
                                             {{ csrf_field() }}
@@ -76,7 +76,7 @@
     <div class="form-group form-group-submit">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 d-flex justify-content-end">
+                <div class="col-12 d-flex justify-content-end d-none">
                     <a href="{{route('admin.rodo.rules.create')}}" class="btn btn-primary">Dodaj regułkę</a>
                 </div>
             </div>
