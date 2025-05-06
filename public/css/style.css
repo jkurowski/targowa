@@ -1248,6 +1248,9 @@ footer li a {
   section.financing {
     padding-bottom: 0;
   }
+  .custom-clip {
+    display: none;
+  }
 }
 /* end of 991.98 */
 @media (max-width: 767.98px) {

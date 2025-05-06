@@ -117,9 +117,9 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-12 col-lg-6 d-flex align-items-center">
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-12 col-lg-10">
                                 <h2 class="section-title">Finezja <br>w każdym detalu</h2>
                                 <p>Apartamenty Finezja wyróżniają się wysoką jakością wykończenia <br>i ponadczasową estetyką. To połączenie klasy, kameralności i architektury <br>z charakterem.</p>
                                 <p>&nbsp;</p>
@@ -142,7 +142,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Nowoczesne i komfortowe rozwiązania</h3>
                                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                                     <path d="M120.793,3.2A4.6,4.6,0,0,0,116.2,7.793v9.455h9.185V7.793A4.6,4.6,0,0,0,120.793,3.2Zm-2.957,1.635a4.18,4.18,0,0,1,7.138,2.957v2.545h-1.379V8.546h-5.872v1.607h-1.095V7.793a4.206,4.206,0,0,1,1.223-2.957Zm5.332,5.5h0v6.484h-6.555V13.409h1.493V13.2c0-1.422,0-2.829.014-4.251h5.033v1.379ZM117.693,13h-1.081V10.565h1.095V13Zm5.886-2.247h1.379v6.086h-1.379Z" transform="translate(-89.846 6.506)" fill="#232323" stroke="#232323" stroke-width="0.4"/>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Świetna lokalizacja</h3>
                                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
                                                     <path d="M42.4,43.546a.412.412,0,0,0-.411.411v4.01H34.773a.411.411,0,1,0,0,.823H49.59a2.187,2.187,0,0,0,2.185-2.184V18.324a2.187,2.187,0,0,0-2.185-2.185H27.006a2.187,2.187,0,0,0-2.184,2.185V46.607a2.186,2.186,0,0,0,2.184,2.184h3.616a.411.411,0,1,0,0-.823H27.006a1.363,1.363,0,0,1-1.361-1.361V32.835H27.9a.411.411,0,0,0,0-.823H25.645V18.324a1.363,1.363,0,0,1,1.361-1.362h7.582v15.05h-3.2a.411.411,0,1,0,0,.823H35a.411.411,0,0,0,.411-.411V27.3h3.559a.411.411,0,0,0,0-.823H35.411V16.962H49.59a1.364,1.364,0,0,1,1.362,1.362v8.154H43.061a.411.411,0,1,0,0,.823H44.7v1.375a.411.411,0,0,0,.823,0V27.3h5.434v7.118h-6.4V32.6a.411.411,0,0,0-.823,0v4.451a.411.411,0,0,0,.823,0V35.242h6.4V46.607a1.363,1.363,0,0,1-1.362,1.361H42.811v-4.01a.412.412,0,0,0-.411-.411" transform="translate(-6.858 -4.916)" fill="#232323"/>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Funkcjonalne rozkłady</h3>
                                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                                         </div>
                                     </div>
@@ -179,10 +179,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
+                    <div class="col-12 col-lg-6 d-flex justify-content-end">
                         <div class="custom-clip">
                             <img src="{{ asset('../images/5.jpg') }}" alt="Opis zdjęcia" width="526" height="665">
                         </div>
+                        <img class="d-block d-lg-none mt-4" src="{{ asset('../images/wizualizacja-osiedla-1.jpg') }}" alt="Opis zdjęcia" width="720" height="493">
                     </div>
                 </div>
             </div>
@@ -393,7 +394,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-6 d-flex align-items-center">
+                    <div class="col-12 col-lg-6 d-flex align-items-center">
                         <div class="row">
                             <div class="col-10">
                                 <h2 class="section-title">Doświadczenie <br>które buduje</h2>
@@ -418,7 +419,7 @@
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Nowoczesne i komfortowe rozwiązania</h3>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -434,7 +435,7 @@
                                                     <path d="M120.793,3.2A4.6,4.6,0,0,0,116.2,7.793v9.455h9.185V7.793A4.6,4.6,0,0,0,120.793,3.2Zm-2.957,1.635a4.18,4.18,0,0,1,7.138,2.957v2.545h-1.379V8.546h-5.872v1.607h-1.095V7.793a4.206,4.206,0,0,1,1.223-2.957Zm5.332,5.5h0v6.484h-6.555V13.409h1.493V13.2c0-1.422,0-2.829.014-4.251h5.033v1.379ZM117.693,13h-1.081V10.565h1.095V13Zm5.886-2.247h1.379v6.086h-1.379Z" transform="translate(-89.846 6.506)" fill="#232323" stroke="#232323" stroke-width="0.4"/>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Świetna lokalizacja</h3>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -445,7 +446,7 @@
                                                     <path d="M42.4,43.546a.412.412,0,0,0-.411.411v4.01H34.773a.411.411,0,1,0,0,.823H49.59a2.187,2.187,0,0,0,2.185-2.184V18.324a2.187,2.187,0,0,0-2.185-2.185H27.006a2.187,2.187,0,0,0-2.184,2.185V46.607a2.186,2.186,0,0,0,2.184,2.184h3.616a.411.411,0,1,0,0-.823H27.006a1.363,1.363,0,0,1-1.361-1.361V32.835H27.9a.411.411,0,0,0,0-.823H25.645V18.324a1.363,1.363,0,0,1,1.361-1.362h7.582v15.05h-3.2a.411.411,0,1,0,0,.823H35a.411.411,0,0,0,.411-.411V27.3h3.559a.411.411,0,0,0,0-.823H35.411V16.962H49.59a1.364,1.364,0,0,1,1.362,1.362v8.154H43.061a.411.411,0,1,0,0,.823H44.7v1.375a.411.411,0,0,0,.823,0V27.3h5.434v7.118h-6.4V32.6a.411.411,0,0,0-.823,0v4.451a.411.411,0,0,0,.823,0V35.242h6.4V46.607a1.363,1.363,0,0,1-1.362,1.361H42.811v-4.01a.412.412,0,0,0-.411-.411" transform="translate(-6.858 -4.916)" fill="#232323"/>
                                                 </svg>
                                             </div>
-                                            <h3>Komfort</h3>
+                                            <h3>Funkcjonalne rozkłady</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -454,10 +455,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
+                    <div class="col-12 col-lg-6 d-flex justify-content-end">
                         <div class="custom-clip">
                             <img src="{{ asset('../images/nasz-pracownik-z-doswiadczeniem.jpg') }}" alt="Opis zdjęcia" width="628" height="665">
                         </div>
+                        <img class="d-block d-lg-none mt-4" src="{{ asset('../images/nasz-pracownik-z-doswiadczeniem-2.jpg') }}" alt="Opis zdjęcia" width="720" height="493">
                     </div>
                 </div>
             </div>
