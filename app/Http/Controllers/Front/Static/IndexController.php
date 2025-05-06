@@ -37,9 +37,9 @@ class IndexController extends Controller
     public function packages()
     {
 
-        $silver = Image::where('gallery_id', 4)->orderBy("sort")->get();
-        $golden = Image::where('gallery_id', 5)->orderBy("sort")->get();
-        $platinium = Image::where('gallery_id', 6)->orderBy("sort")->get();
+        $silver = Image::where('gallery_id', 3)->orderBy("sort")->get();
+        $golden = Image::where('gallery_id', 4)->orderBy("sort")->get();
+        $platinium = Image::where('gallery_id', 5)->orderBy("sort")->get();
 
         $page = Page::find(4);
         return view('front.static.packages', compact('page', 'silver', 'golden', 'platinium'));
