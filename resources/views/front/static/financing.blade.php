@@ -18,7 +18,7 @@
         <section class="financing">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-4 d-flex align-items-center">
+                    <div class="col-12 col-lg-6 col-xl-4 d-flex align-items-center">
                         <div>
                             <h1 class="section-title">Finansowanie</h1>
                             <p>Obsługą kredytów hipotecznych dla klientów zajmie się: <br><b>Pan Michał Chrakowiecki</b></p>
@@ -38,7 +38,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 d-flex align-items-center justify-content-end">
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-end mt-5 mt-lg-0">
                         <div class="circle-holder">
                             <img src="{{ asset('images/sprzedawca-michal-2.jpg') }}" alt="">
                         </div>

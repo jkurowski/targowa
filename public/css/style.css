@@ -1090,6 +1090,11 @@ footer li a {
     width: 510px;
     height: 510px;
   }
+  .financing .circle-holder {
+    border: 10px solid #fff;
+    width: 328px;
+    height: 328px;
+  }
   #maplegend span {
     font-size: 13px;
   }
@@ -1143,6 +1148,11 @@ footer li a {
     border: 11px solid #fff;
     width: 428px;
     height: 428px;
+  }
+  .financing .circle-holder {
+    border: 10px solid #fff;
+    width: 276px;
+    height: 276px;
   }
   .ap-example .ap-example-hover,
   .ap-example .ap-example-hover:hover {
@@ -1234,6 +1244,9 @@ footer li a {
   }
   header.fixed li ul {
     top: 44px;
+  }
+  section.financing {
+    padding-bottom: 0;
   }
 }
 /* end of 991.98 */
@@ -1508,6 +1521,20 @@ footer li a {
   .ap-example .ap-example-hover:hover {
     width: 156px;
     background-size: 156px auto;
+  }
+  .financing .cta-contact-details a {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .financing .cta-contact svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .financing .circle-holder {
+    border: 5px solid #fff;
+    width: 206px;
+    height: 206px;
   }
 }
 /* end of 575.98 */
