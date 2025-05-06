@@ -7,6 +7,7 @@ use App\Models\ClientMessageArgument;
 use App\Models\ClientRules;
 use App\Models\Property;
 use App\Repositories\BaseRepository;
+use Illuminate\Support\Facades\Log;
 use Yajra\DataTables\DataTables;
 
 class ClientRepository extends BaseRepository implements ClientRepositoryInterface
@@ -58,14 +59,28 @@ class ClientRepository extends BaseRepository implements ClientRepositoryInterfa
         $utm_array = array_filter($attributes->cookie());
         unset($utm_array['XSRF-TOKEN'], $utm_array['laravel_session']);
 
-        $client = $this->model->updateOrCreate(
-            ['mail' => $attributes['form_email']],
-            [
-                'phone' => $attributes['form_phone'] ?? NULL,
+        try {
+            $client = $this->model->updateOrCreate(
+                ['mail' => $attributes['form_email']],
+                [
+                    'phone' => $attributes['form_phone'] ?? null,
+                    'name' => $attributes['form_name'],
+                    'updated_at' => now()
+                ]
+            );
+            Log::channel('createUser')->info('Request Data', [
+                'mail' => $attributes['form_email'],
+                'phone' => $attributes['form_phone'] ?? null,
                 'name' => $attributes['form_name'],
-                'updated_at' => now()
-            ]
-        );
+            ]);
+            Log::channel('createUser')->info($client->wasRecentlyCreated ?
+                'Client was created: ' . $client->id :
+                'Client was updated: ' . $client->id
+            );
+        } catch (\Exception $e) {
+            Log::channel('createUser')->error('Error during updateOrCreate: ' . $e->getMessage());
+            Log::channel('createUser')->error('Trace', ['trace' => $e->getTraceAsString()]);
+        }
 
         if($client->id){
 
@@ -77,13 +92,37 @@ class ClientRepository extends BaseRepository implements ClientRepositoryInterfa
             $msg->ip = $attributes->ip();
             $msg->source = $source;
 
-            if($property){
-                $msg->investment = $property->investment_id;
-                $msg->building = $property->building_id;
-                $msg->floor = $property->floor_id;
-                $msg->property = $property->name;
-                $msg->rooms = $property->rooms;
-                $msg->area = $property->area;
+            $arguments = [];
+            if ($property) {
+                $propertyMappings = [
+                    'investment_id' => $property->investment_id,
+                    'building_id' => $property->building_id,
+                    'floor_id' => $property->floor_id,
+                    'property_id' => $property->id,
+                    'rooms' => $property->rooms,
+                    'area' => $property->area,
+                ];
+                $arguments = array_merge($propertyMappings, $utm_array);
+            }
+
+            if ($source && isset($attributes['is_external_source'])) {
+                $arguments['is_external'] = $attributes['is_external_source'];
+            }
+
+            if (isset($attributes['investment_id']) && isset($attributes['investment_name'])) {
+                $arguments = array_merge(
+                    $arguments,
+                    ['investment_id' => $attributes['investment_id']],
+                    ['investment_name' => $attributes['investment_name']]
+                );
+            }
+
+            if (isset($attributes['property_name'])) {
+                $arguments = array_merge($arguments, ['property_name' => $attributes['property_name']]);
+            }
+
+            if (!empty($arguments)) {
+                $msg->arguments = json_encode($arguments);
             }
 
             $msg->save();

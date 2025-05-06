@@ -99,6 +99,21 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+        'email' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/email.log'),
+            'level' => 'error',
+        ],
+        'recaptcha' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/recaptcha.log'),
+            'level' => 'info',
+        ],
+        'createUser' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/rodo_client.log'),
+            'level' => 'info',
+        ],
     ],
 
 ];

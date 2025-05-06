@@ -6,7 +6,15 @@
     'back' => $back ?? false,
     'method' => 'POST',
 ])
-
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul class="mb-0">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
 @if($propertyId)
     <form id="contactForm" autocomplete="off" action="{{route('front.contact.property', $propertyId)}}" method="{{ $method }}" class="contact-form row validateForm">
 @else
@@ -78,21 +86,41 @@
     @endforeach
 
     <div class="col-12 text-start">
-        <button type="submit" class="bttn-big mt-0">Wyślij</button>
+        <input name="form_page" type="hidden" value="{{ $pageTitle }}">
+        <script type="text/javascript">
+            @if(config('services.recaptcha.v3_site_key') && config('services.recaptcha.v3_secret_key'))
+            document.write("<button type=\"submit\" class=\"bttn-big mt-0 g-recaptcha\" data-sitekey=\"{{ config('services.recaptcha.v3_site_key') }}\" data-callback=\"onRecaptchaSuccess\" data-action=\"submitContact\">WYŚLIJ</button>");
+            @else
+            document.write("<button class=\"bttn-big mt-0\" type=\"submit\">WYŚLIJ</button>");
+            @endif
+        </script>
+        <noscript>Do poprawnego działania, Java musi być włączona.</noscript>
     </div>
 </form>
 
 @push('scripts')
     <script src="{{ asset('js/validation.js') }}" charset="utf-8"></script>
     <script src="{{ asset('js/pl.js') }}" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $(".validateForm").validationEngine({
                 validateNonVisibleFields: true,
                 updatePromptsPosition:true,
-                promptPosition : "topRight:-137px"
+                promptPosition : "topRight:-137px",
+                autoPositionUpdate: false
             });
         });
+
+        function onRecaptchaSuccess(token) {
+            $(".validateForm").validationEngine('updatePromptsPosition');
+            const isValid = $(".validateForm").validationEngine('validate');
+            if (isValid) {
+                $("#contactForm").submit();
+            } else {
+                grecaptcha.reset();
+            }
+        }
         @if (session('success') || session('warning') || $errors->any())
         $(window).load(function() {
             const aboveHeight = $('header').outerHeight();

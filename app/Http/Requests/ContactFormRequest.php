@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\ReCaptchaV3;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ContactFormRequest extends FormRequest
@@ -29,7 +30,7 @@ class ContactFormRequest extends FormRequest
             'form_email' => 'required|email:rfc',
             'form_message' => 'required',
             'form_phone' => 'required',
-            'rule_1' => 'required'
+            'g-recaptcha-response' => ['required', new ReCaptchaV3()]
         ];
 
         return $rules;
@@ -42,8 +43,7 @@ class ContactFormRequest extends FormRequest
             'form_email.required' => 'To pole jest wymagane',
             'form_email.email' => 'Nieprawidłowy adres e-mail',
             'form_message.required' => 'To pole jest wymagane',
-            'form_phone.required' => 'To pole jest wymagane',
-            'rule_1.required' => 'To pole jest wymagane'
+            'form_phone.required' => 'To pole jest wymagane'
         ];
     }
 }

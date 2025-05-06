@@ -21,8 +21,19 @@
             <table align="center" cellpadding="0" cellspacing="0" border="0" width="660" style="margin:0 auto;width:660px;padding:0;border-collapse:collapse;background:white">
                 <tr>
                     <td style="font-family:Arial;font-size:14px;padding:25px 30px;line-height:24px">
-                        <p>Witaj,</p>
-                        <p>w systemie masz nową wiadomość wysłaną ze strony: </p>
+                        <p style="text-align:center">{{ config('app.name') }}</p>
+                        <p><b>Wiadomość wysłana: <?= date("d.m.Y - H:i:s"); ?> ze strony: {{ $request->form_page }}</b></p>
+                        <hr style="border:0;border-bottom:1px solid #ececec" />
+                        <p><b>Imię:</b> {{ $request->form_name }}</p>
+                        <p><b>E-mail:</b> {{ $request->form_email }}</p>
+                        @isset($request->phone)<p style="margin:0"><b>Telefon:</b> {{ $request->phone }}</p>@endisset
+                        @isset($property)
+                            <hr style="border:0;border-bottom:1px solid #ececec" />
+                            <p><b>Mieszkanie:</b> {{ $property->name }}</p>
+                            <p><b>Inwestycja:</b> {{ $property->investment->name }}</p>
+                        @endisset
+                        <hr style="border:0;border-bottom:1px solid #ececec" />
+                        <p>{{ $request->form_message }}</p>
                     </td>
                 </tr>
             </table>
