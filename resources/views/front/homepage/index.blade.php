@@ -190,11 +190,11 @@
             </div>
         </section>
 
-        <section>
+        <section class="first-sec gallery sec-pad position-relative pt-0">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
-                        <h2 class="section-title">Odkrywaj <br>okolice</h2>
+                    <div class="col-12 col-sm-10 col-lg-6 text-center">
+                        <h1 class="section-title">Odkrywaj <br>okolice</h1>
                         <p>Finezja znajduje się przy ul. Targowej 49 – w miejscu, gdzie można poczuć miasto, ale jednocześnie złapać dystans.</p>
                         <p>&nbsp;</p>
                         <p>W pobliżu znajdziesz wszystko, czego potrzeba – centrum handlowe Galeria Łódzka, restauracje, siłownie, szkoły, a także Muzeum Kinematografii. Sąsiedztwo terenów zielonych, takich jak park Źródliska, Księży Młyn pozwala odnaleźć równowagę – pośród miejskiego zgiełku, ale z dostępem do natury.</p>
@@ -204,9 +204,9 @@
 
             <div id="maplegend" class="container mt-5 pt-3">
                 <div class="row">
-                    <div class="col-6 pe-4">
-                        <div class="row border-bottom pb-3 mb-4">
-                            <div class="col-4">
+                    <div class="col-12 col-xl-6 order-2 order-xl-1 pe-4">
+                        <div class="row border-bottom pb-3 mb-4 justify-content-center">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-red">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -220,7 +220,7 @@
                                     <span>ZAKUPY</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-orange">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
@@ -230,7 +230,7 @@
                                     <span>REKREACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-blue">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31">
@@ -244,7 +244,7 @@
                                     <span>ZDROWIE</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-purple">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
@@ -257,7 +257,7 @@
                                     <span>EDUKACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-green">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
@@ -267,7 +267,7 @@
                                     <span>KOMUNIKACJA</span>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-4">
                                 <div class="maplegend-box maplegend-pink">
                                     <div class="box-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -293,33 +293,33 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="2 min" place="PARK ŹRÓDLISKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="9 min" place="GALERIA ŁÓDZKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="3 min" place="WYŻSZA SZKOŁA FILMOWA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey time="12 min" place="KSIĘŻY MŁYN" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="6 min" place="OFF PIOTRKOWSKA" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="7 min" place="MONOPOLIS" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="8 min" place="NOWE CENTRUM ŁÓDZI" />
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 col-sm-4 col-lg-3 col-xl-6">
                                 <x-legend-icon-grey-bike time="9 min" place="POLITECHNIKA ŁÓDZKA" />
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-xl-6 order-1 order-xl-2 mb-4 mb-xl-0">
                         <div id="map" class="w-100"></div>
                     </div>
                 </div>
@@ -357,69 +357,24 @@
                 <div class="row pt-5">
                     <div class="col-3">
                         <div class="carousel-room-item">
-                            <h2><a href="">MIESZKANIE <br>NR 17</a></h2>
+                            <h2 class="text-center"><a href="#">Nazwa <br>numer</a></h2>
                             <ul class="list-unstyled">
-                                <li>Metraż: 45 m<sup>2</sup></li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Pokoje: 2</li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Piętro: 4</li>
+                                <li>Metraż: <span>20 m<sup>2</sup></span></li>
+                                <li>Pokoje: <span>20</span></li>
+                                <li>Piętro: <span>20</span></li>
                             </ul>
 
-                            <a href="" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="carousel-room-item">
-                            <h2><a href="">MIESZKANIE <br>NR 17</a></h2>
-                            <ul class="list-unstyled">
-                                <li>Metraż: 45 m<sup>2</sup></li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Pokoje: 2</li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Piętro: 4</li>
-                            </ul>
-
-                            <a href="" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="carousel-room-item">
-                            <h2><a href="">MIESZKANIE <br>NR 17</a></h2>
-                            <ul class="list-unstyled">
-                                <li>Metraż: 45 m<sup>2</sup></li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Pokoje: 2</li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Piętro: 4</li>
-                            </ul>
-
-                            <a href="" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="carousel-room-item">
-                            <h2><a href="">MIESZKANIE <br>NR 17</a></h2>
-                            <ul class="list-unstyled">
-                                <li>Metraż: 45 m<sup>2</sup></li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Pokoje: 2</li>
-                                <li class="d-inline-flex"><span></span></li>
-                                <li>Piętro: 4</li>
-                            </ul>
-
-                            <a href="" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
-                            </a>
+                            <div class="text-center">
+                                <a href="#" class="bttn-text bttn-text-white">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#fff"/></svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row pt-5">
                     <div class="col-12 text-center">
-                        <a href="" class="bttn-text">Sprawdź więcej <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#000"/></svg></a>
+                        <a href="{{ route('front.developro.investment.index') }}" class="bttn-text">Sprawdź więcej <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#000"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -521,13 +476,13 @@
         <section class="section-bg">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
+                    <div class="col-12 col-md-10 col-xl-6 text-center">
                         <h2 class="section-title">Apartamenty stworzone <br>do świata finezji</h2>
                         <p>Poznaj apartament skrojony na Twoje potrzeby: funkcjonalna przestrzeń, duże przeszklenia, przestronne tarasy i inteligentne rozwiązania Smart Home – wszystko z myślą o wygodziei codziennym komforcie.</p>
                     </div>
                 </div>
-                <div class="row mt-5 mb-5">
-                    <div class="col-3">
+                <div class="row mt-5 mb-5 justify-content-center">
+                    <div class="col-6 col-sm-5 col-lg-3">
                         <a href="">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
@@ -537,7 +492,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-sm-5 col-lg-3">
                         <a href="">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
@@ -547,7 +502,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-sm-5 col-lg-3 mt-4 mt-lg-0">
                         <a href="">
                             <div class="ap-example">
                                 <div class="ap-example-hover">
@@ -557,7 +512,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-sm-5 col-lg-3 mt-4 mt-lg-0">
                         <a href="">
                             <div class="ap-example">
                                 <div class="ap-example-hover">

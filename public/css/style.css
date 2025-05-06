@@ -1022,6 +1022,10 @@ footer li a {
   #map {
     min-height: 650px;
   }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    background-size: 306px auto;
+  }
 }
 @media (max-width: 1399.98px) {
   .header-holder {
@@ -1059,6 +1063,14 @@ footer li a {
   #maplegend .maplegend-grey span {
     font-size: 11px;
   }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    background-size: 261px auto;
+  }
+  .ap-example h3 {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
 /* end of 1399.98 */
 @media (max-width: 1199.98px) {
@@ -1088,6 +1100,10 @@ footer li a {
     border: 11px solid #fff;
     width: 428px;
     height: 428px;
+  }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    background-size: 216px auto;
   }
 }
 /* end of 1199.98 */
@@ -1141,12 +1157,10 @@ footer li a {
     height: 248px;
     margin: 0 auto 40px;
   }
-  .section-title {
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
-  .section-title {
+  .section-title,
+  h2.section-title {
     font-size: 31px;
+    line-height: 34px;
     margin-bottom: 15px;
   }
   .section-title br {
@@ -1159,6 +1173,10 @@ footer li a {
   }
   section {
     padding: 50px 0;
+  }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    background-size: 276px auto;
   }
 }
 /* end of 991.98 */
@@ -1280,11 +1298,19 @@ footer li a {
   #maplegend .box-icon-holder {
     margin: 0 auto;
   }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    background-size: 201px auto;
+  }
 }
 /* end of 767.98 */
 @media (max-width: 575.98px) {
   main {
     padding: 0 15px;
+  }
+  .section-bg {
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .footer-finezja-logo {
     width: 130px;
@@ -1395,6 +1421,31 @@ footer li a {
   .apartment-details .col-12:last-child {
     border-bottom: 0;
   }
+  .ap-example {
+    width: 156px;
+    margin: 0 auto;
+  }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    width: 156px;
+    background-size: 156px auto;
+  }
 }
 /* end of 575.98 */
+@media (max-width: 359.98px) {
+  .ap-example {
+    width: 126px;
+    margin: 0 auto;
+  }
+  .ap-example .ap-example-hover,
+  .ap-example .ap-example-hover:hover {
+    width: 126px;
+    background-size: 126px auto;
+  }
+  .ap-example .ap-example-hover h3,
+  .ap-example .ap-example-hover:hover h3 {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
