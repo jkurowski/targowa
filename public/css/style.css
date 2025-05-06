@@ -1254,6 +1254,9 @@ footer li a {
   section {
     padding: 30px 0;
   }
+  section.section-bg {
+    margin-top: 0;
+  }
   .pagebody footer {
     margin-top: 30px;
   }

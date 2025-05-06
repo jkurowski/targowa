@@ -15,7 +15,7 @@
                                     <p>Apartamenty położone w najbardziej klimatycznej części Łodzi, Finezja sąsiaduje z miejscami, które budują tożsamość miasta – Księżym Młynem, Monopolis, pałacem Scheiblerów oraz słynną ulicą Piotrkowską.</p>
                                     <p>&nbsp;</p>
                                     <p>Tu przeszłość przemysłowej potęgi Łodzi spotyka się z nowoczesnym rytmem życia.</p>
-                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                    <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
                             <div class="col-6 d-flex align-items-end">
@@ -36,7 +36,7 @@
                                     <p>Stylowe wnętrza, szlachetne detale i miejski charakter tworzą przestrzeń, która łączy przeszłość z teraźniejszością.</p>
                                     <p>&nbsp;</p>
                                     <p>Dla tych, którzy cenią jakość, ale żyją współcześnie.</p>
-                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                    <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
                             <div class="col-6 d-flex align-items-end">
@@ -57,7 +57,7 @@
                                     <p> Z jednej strony elegancka architektura i ponadczasowy detal, z drugiej – komfort, funkcjonalność i styl życia na miarę dzisiejszych oczekiwań.</p>
                                     <p>&nbsp;</p>
                                     <p>Twój adres między tym, co było, a tym, co nadchodzi.</p>
-                                    <a href="#" class="bttn-big">Zobacz apartamenty</a>
+                                    <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Zobacz apartamenty</a>
                                 </div>
                             </div>
                             <div class="col-6 d-flex align-items-center">
@@ -176,8 +176,6 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <a href="#" class="bttn-big">Czytaj więcej</a>
                             </div>
                         </div>
                     </div>
@@ -452,7 +450,7 @@
                                     </div>
                                 </div>
 
-                                <a href="#" class="bttn-text">Czytaj więcej <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#000"/></svg></a>
+                                <a href="{{ route('front.investor') }}" class="bttn-text">Czytaj więcej <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#000"/></svg></a>
                             </div>
                         </div>
                     </div>
