@@ -951,6 +951,12 @@ header li ul li {
   padding: 0;
   display: flex;
 }
+header li ul li a {
+  color: white;
+}
+header li ul li a:hover {
+  color: white;
+}
 header li:hover ul {
   display: block;
 }
@@ -1350,6 +1356,12 @@ footer li a {
   .openmenu header li ul li {
     display: flex;
     justify-content: center;
+  }
+  .openmenu header li ul li a {
+    color: black;
+  }
+  .openmenu header li ul li a:hover {
+    color: black;
   }
   #maplegend .maplegend-box {
     display: block;
