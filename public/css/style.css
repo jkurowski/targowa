@@ -926,6 +926,7 @@ header li {
   padding: 0 35px;
   display: inline-flex;
   align-items: center;
+  position: relative;
 }
 header li a {
   font-size: 16px;
@@ -937,6 +938,22 @@ header li a {
 header li.active a {
   color: #978c7d;
 }
+header li ul {
+  position: absolute;
+  left: 25px;
+  top: 90px;
+  background: #978c7d;
+  width: 220px;
+  padding: 10px 15px !important;
+  display: none;
+}
+header li ul li {
+  padding: 0;
+  display: flex;
+}
+header li:hover ul {
+  display: block;
+}
 header.fixed {
   position: fixed;
   background: #fefefc;
@@ -946,6 +963,9 @@ header.fixed {
   width: 100%;
   z-index: 9900;
   top: 0;
+}
+header.fixed li ul {
+  top: 65px;
 }
 header.fixed img {
   height: 80px;
@@ -1082,6 +1102,12 @@ footer li a {
     text-align: center;
     padding: 0 20px;
   }
+  header li ul {
+    top: 70px;
+  }
+  header.fixed li ul {
+    top: 60px;
+  }
 }
 /* end of 1399.98 */
 @media (max-width: 1199.98px) {
@@ -1115,6 +1141,12 @@ footer li a {
   .ap-example .ap-example-hover,
   .ap-example .ap-example-hover:hover {
     background-size: 216px auto;
+  }
+  header li ul {
+    top: 60px;
+  }
+  header.fixed li ul {
+    top: 50px;
   }
 }
 /* end of 1199.98 */
@@ -1188,6 +1220,14 @@ footer li a {
   .ap-example .ap-example-hover,
   .ap-example .ap-example-hover:hover {
     background-size: 276px auto;
+  }
+  header li ul {
+    top: 44px;
+    left: 12px;
+    width: 180px;
+  }
+  header.fixed li ul {
+    top: 44px;
   }
 }
 /* end of 991.98 */
@@ -1278,7 +1318,8 @@ footer li a {
   .openmenu header nav ul li {
     width: 100%;
     padding: 13px 0;
-    justify-content: center;
+    display: block;
+    text-align: center;
   }
   .openmenu header nav ul li.list-item-logo {
     display: none;
@@ -1286,14 +1327,29 @@ footer li a {
   .openmenu header nav ul li a {
     font-size: 24px;
   }
+  .openmenu header nav ul.gotsub {
+    padding-bottom: 0;
+  }
   .openmenu header nav ul li.active a {
     color: #fff;
   }
   .openmenu header nav ul li.d-flex {
     padding: 5px 0;
+    justify-content: center;
   }
   .openmenu header nav ul li.d-flex a {
     font-size: 18px;
+  }
+  .openmenu header li ul {
+    position: static;
+    display: flex !important;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 !important;
+  }
+  .openmenu header li ul li {
+    display: flex;
+    justify-content: center;
   }
   #maplegend .maplegend-box {
     display: block;

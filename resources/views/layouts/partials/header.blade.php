@@ -10,7 +10,13 @@
                 <div class="col-8 col-md-12 col-mobile-menu">
                     <nav>
                         <ul class="mb-0 list-unstyled d-flex justify-content-center">
-                            <li><a href="/">O inwestycji</a></li>
+                            <li class="gotsub">
+                                <a href="/">O inwestycji</a>
+                                <ul class="list-unstyled submenu mb-0">
+                                    <li><a href="{{ route('front.packages') }}">Pakiet wykończeniowy</a></li>
+                                    <li><a href="{{ route('front.financing') }}">Finansowanie</a></li>
+                                </ul>
+                            </li>
                             <li class="{{ Request::routeIs('front.developro.investment.index') ? 'active' : '' }}"><a href="{{ route('front.developro.investment.index') }}">Apartamenty</a></li>
                             <li class="{{ Request::routeIs('front.gallery') ? 'active' : '' }}"><a href="{{ route('front.gallery') }}">Galeria</a></li>
                             <li class="list-item-logo"><a href="/"><img src="{{asset('images/logo.svg')}}" alt="{{ settings()->get('page_title') }}"></a></li>
