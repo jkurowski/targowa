@@ -60,7 +60,7 @@
                 iconUrl: `{{ asset('images/mapicons/${i}.png') }}`,
                 shadowUrl: '',
                 iconSize: [40, 40],
-                iconAnchor: [20, 32]
+                iconAnchor: [0, 0]
             });
         }
 
