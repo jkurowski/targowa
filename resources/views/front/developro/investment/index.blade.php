@@ -70,8 +70,11 @@
                                 <div class="input-select">
                                     <label for="inputArea" class="form-label">Metraż</label>
                                     <select id="inputArea" class="form-select" name="s_metry">
-                                        <option selected>Wszystko</option>
-                                        <option>...</option>
+                                        <option selected value="" {{ request('s_metry') == null ? 'selected' : '' }}>Wszystko</option>
+                                        <option value="27-40" @if(request('s_metry') == '27-40') selected @endif>27-40</option>
+                                        <option value="41-60" @if(request('s_metry') == '41-60') selected @endif>41-60</option>
+                                        <option value="61-70" @if(request('s_metry') == '61-70') selected @endif>61-70</option>
+                                        <option value="71-90" @if(request('s_metry') == '71-90') selected @endif>71-90</option>
                                     </select>
                                 </div>
                             </div>
@@ -80,9 +83,11 @@
                                     <label for="inputFloor" class="form-label">Piętro</label>
                                     <select id="inputFloor" class="form-select" name="s_pietro">
                                         <option value="" {{ request('s_pietro') == null ? 'selected' : '' }}>Wszystkie</option>
-                                        @foreach($floors as $f)
-                                            <option value="{{ $f->id }}" {{ request('s_pietro') == $f->id ? 'selected' : '' }}>{{ $f->name }}</option>
-                                        @endforeach
+                                        <option value="0" @if(request('s_pietro') == '0') selected @endif>Parter</option>
+                                        <option value="1" @if(request('s_pietro') == '1') selected @endif>Piętro 1</option>
+                                        <option value="2" @if(request('s_pietro') == '2') selected @endif>Piętro 2</option>
+                                        <option value="3" @if(request('s_pietro') == '3') selected @endif>Piętro 3</option>
+                                        <option value="4" @if(request('s_pietro') == '4') selected @endif>Piętro 4</option>
                                     </select>
                                 </div>
                             </div>

@@ -79,13 +79,16 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-10 col-xxl-8">
                     <div id="search">
-                        <form action="" method="get" class="d-flex align-items-center h-100 row">
+                        <form action="{{ route('front.developro.investment.index') }}" method="get" class="d-flex align-items-center h-100 row">
                             <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputRooms" class="form-label">Ilość pokoi</label>
                                     <select id="inputRooms" class="form-select" name="s_pokoje">
-                                        <option selected>Wszystko</option>
-                                        <option>...</option>
+                                        <option selected value="">Wszystko</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
                                     </select>
                                 </div>
                             </div>
@@ -93,17 +96,24 @@
                                 <div class="input-select">
                                     <label for="inputArea" class="form-label">Metraż</label>
                                     <select id="inputArea" class="form-select" name="s_metry">
-                                        <option selected>Wszystko</option>
-                                        <option>...</option>
+                                        <option selected value="">Wszystko</option>
+                                        <option value="27-40">27-40</option>
+                                        <option value="41-60">41-60</option>
+                                        <option value="61-70">61-70</option>
+                                        <option value="71-90">71-90</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputFloor" class="form-label">Piętro</label>
-                                    <select id="inputFloor" class="form-select" name="floor">
-                                        <option selected>Wszystko</option>
-                                        <option>...</option>
+                                    <select id="inputFloor" class="form-select" name="s_floor">
+                                        <option selected value="">Wszystko</option>
+                                        <option value="0">Parter</option>
+                                        <option value="1">Piętro 1</option>
+                                        <option value="2">Piętro 2</option>
+                                        <option value="3">Piętro 3</option>
+                                        <option value="4">Piętro 4</option>
                                     </select>
                                 </div>
                             </div>

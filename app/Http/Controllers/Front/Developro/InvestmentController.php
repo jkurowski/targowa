@@ -31,11 +31,22 @@ class InvestmentController extends Controller
                 if ($request->input('s_pokoje')) {
                     $query->where('rooms', $request->input('s_pokoje'));
                 }
-                if ($request->input('s_pietro')) {
-                    $query->where('floor_id', $request->input('s_pietro'));
+
+                if (!is_null($request->input('s_pietro'))) {
+                    $query->whereHas('floor', function ($q) use ($request) {
+                        $q->where('number', $request->input('s_pietro'));
+                    });
                 }
+
                 if ($request->input('s_metry')) {
-                    $query->where('area', $request->input('s_metry'));
+                    $range = explode('-', $request->input('s_metry'));
+                    if (count($range) === 2) {
+                        $min = (float) $range[0];
+                        $max = (float) $range[1];
+                        $query->whereBetween('area', [$min, $max]);
+                    } else {
+                        $query->where('area', $request->input('s_metry')); // fallback if not a range
+                    }
                 }
             },
             'properties.floor'
