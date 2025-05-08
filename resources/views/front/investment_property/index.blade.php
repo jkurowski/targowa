@@ -126,6 +126,8 @@
                 </div>
             </div>
         </section>
+
+        <x-cta/>
     </main>
 @endsection
 
