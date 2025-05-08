@@ -57,7 +57,7 @@
                         <div>
                             <h1 class="section-title">Partnerstwo</h1>
                             <p>Siłą naszej firmy są ludzie, którzy ją tworzą i z nią współpracują. Skupiamy wiedzę i doświadczenie w prowadzeniu przedsięwzięć budowlanych architektów, kierowników projektu, kierowników budowy, inżynierów kontraktu, inżynierów budowy oraz specjalistów branżowych i bardzo dobrych wykonawców. Bez nich proces budowlany nie byłby możliwy do zrealizowania w odpowiedniej jakości i terminach.</p>
-                            <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Sprawdź</a>
+                            <a href="https://pm-invest.com.pl/o-nas/" class="bttn-big">Sprawdź</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-start">
@@ -74,7 +74,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex align-items-center">
                         <div>
-                            <h1 class="section-title">Zarządzanie nieruchomościami</h1>
+                            <h1 class="section-title">Zarządzanie projektami</h1>
                             <p>Przedmiot naszej działalności obejmuje cały zakres zarządzania projektami - planowanie (w tym analiza parametrów technicznych i ekonomicznych projektu), opracowanie budżetów i harmonogramów inwestycji, projektowanie z uzyskaniem pozwolenia na budowę, wybór wykonawców i ich kontraktowanie, kierowanie procesem budowlanym, nadzorowanie prac i rozliczanie wszystkich uczestników procesu, odbiory i uzyskanie pozwolenia na użytkowanie, rozliczenie kontraktu oraz innych czynności związanych z zakończeniem procesu inwestycyjnego.</p>
                             <a href="https://pm-invest.com.pl/" class="bttn-big" target="_blank">Sprawdź</a>
                         </div>
