@@ -167,35 +167,35 @@
                 <div class="row">
                     <div class="col-lg-8 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/z1.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/z1.jpg') }}" class="swipebox" rel="indiwid">
                                 <img src="{{ asset('images/z1_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/z2.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/z2.jpg') }}" class="swipebox" rel="indiwid">
                                 <img src="{{ asset('images/z2_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/z3.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/z3.jpg') }}" class="swipebox" rel="indiwid">
                                 <img src="{{ asset('images/z3_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/z4.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/z4.jpg') }}" class="swipebox" rel="indiwid">
                                 <img src="{{ asset('images/z4_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="gallery-photo-container">
-                            <a href="{{ asset('images/z5.jpg') }}" class="glightbox">
+                            <a href="{{ asset('images/z5.jpg') }}" class="swipebox" rel="indiwid">
                                 <img src="{{ asset('images/z5_thumb.webp') }}" alt="Wizualizacja" class="gallery-photo" loading="lazy">
                             </a>
                         </div>
