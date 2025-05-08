@@ -26,7 +26,7 @@
             </div>
             <div class="col-7 col-md-4 col-lg-3 text-center text-sm-start">
                 <div class="footer-box">
-                    <h4>Kontakt</h4>
+                    <h4>Biuro sprzedaży</h4>
                     <ul class="mb-0 list-unstyled">
                         <li class="justify-content-center justify-content-sm-start">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g transform="translate(0)"><rect width="21" height="21" rx="10.5" transform="translate(0 0)" fill="#978c7d"/><path d="M151.5,149.27l-1.3-1.078c-.827-.827-2.3,1.04-2.306,1.044-.115.115-1.039-.623-1.795-1.379s-1.493-1.68-1.379-1.795c0,0,1.872-1.478,1.044-2.306l-1.075-1.3c-1.161-1.012-4.784,1.737.069,6.593l.074.073.074.074C149.765,154.055,152.516,150.432,151.5,149.27Z" transform="translate(-136.375 -136.326)" fill="#fff"/></g></svg>
@@ -40,10 +40,14 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="21.264" height="21.264" viewBox="0 0 21.264 21.264"><path d="M10.632,21.264A10.632,10.632,0,1,1,21.264,10.632,10.633,10.633,0,0,1,10.632,21.264Zm0-17.548A5.266,5.266,0,0,1,15.9,8.983c0,2.908-5.266,8.565-5.266,8.565S5.366,11.891,5.366,8.983A5.266,5.266,0,0,1,10.632,3.717Zm0,3.174a2,2,0,1,1-2,2A2,2,0,0,1,10.632,6.89Z" fill="#978c7d" fill-rule="evenodd"/></svg>
                             <a href="#">ul. Targowa 49, Łódź</a>
                         </li>
-                        <li class="justify-content-center justify-content-sm-start"><h5>Godziny otwarcia</h5></li>
                         <li class="p-0 justify-content-center justify-content-sm-start">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path d="M9.5,19A9.5,9.5,0,1,1,19,9.5,9.511,9.511,0,0,1,9.5,19Zm0-14.882A5.382,5.382,0,1,0,14.882,9.5,5.388,5.388,0,0,0,9.5,4.118Zm1.468,7.339a.484.484,0,0,1-.346-.144L9.154,9.846A.486.486,0,0,1,9.011,9.5V6.565a.489.489,0,1,1,.978,0V9.3l1.325,1.325a.489.489,0,0,1-.346.835Z" fill="#978c7d"/></svg>
                             pon–pt: 9:00–17:00
+                        </li>
+                        <li class="justify-content-center justify-content-sm-start"><h5>Siedziba</h5></li>
+                        <li class="justify-content-center justify-content-sm-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.264" height="21.264" viewBox="0 0 21.264 21.264"><path d="M10.632,21.264A10.632,10.632,0,1,1,21.264,10.632,10.633,10.633,0,0,1,10.632,21.264Zm0-17.548A5.266,5.266,0,0,1,15.9,8.983c0,2.908-5.266,8.565-5.266,8.565S5.366,11.891,5.366,8.983A5.266,5.266,0,0,1,10.632,3.717Zm0,3.174a2,2,0,1,1-2,2A2,2,0,0,1,10.632,6.89Z" fill="#978c7d" fill-rule="evenodd"/></svg>
+                            <a href="#">Narutowicza 7/9, 90-117 Łódź</a>
                         </li>
                     </ul>
                 </div>

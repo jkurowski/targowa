@@ -1382,6 +1382,7 @@ footer li {
   display: flex;
   align-items: center;
   font-weight: 400;
+  line-height: 25px;
 }
 footer li svg {
   margin-right: 10px;
