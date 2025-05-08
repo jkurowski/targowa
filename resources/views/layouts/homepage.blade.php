@@ -104,7 +104,7 @@
             });
         }));
 
-        const alwaysIncludedMarker = L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja');
+        const alwaysIncludedMarker = L.marker([51.75971633544925, 19.472233617747424], {icon: icons[0]}).bindPopup('Inwestycja');
 
         // Function to filter markers
         function filterMarkers(group) {
@@ -121,7 +121,7 @@
         }
 
         // Add click event listeners to the divs
-        document.querySelectorAll('.map__legend').forEach(div => {
+        document.querySelectorAll('.maplegend-box').forEach(div => {
             div.addEventListener('click', function() {
                 const group = this.getAttribute('data-group');
                 filterMarkers(group);
