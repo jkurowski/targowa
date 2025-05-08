@@ -65,7 +65,7 @@
         }
 
         const markers = [];
-        markers.push(L.marker([51.74445857171649, 19.487093873682273], {icon: icons[0]}).bindPopup('Inwestycja'));
+        markers.push(L.marker([51.75971633544925, 19.472233617747424], {icon: icons[0]}).bindPopup('Inwestycja'));
 
         @foreach($markers as $m)
         markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
