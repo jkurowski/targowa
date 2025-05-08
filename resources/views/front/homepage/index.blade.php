@@ -107,7 +107,7 @@
                             <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputFloor" class="form-label">Piętro</label>
-                                    <select id="inputFloor" class="form-select" name="s_floor">
+                                    <select id="inputFloor" class="form-select" name="s_pietro">
                                         <option selected value="">Wszystko</option>
                                         <option value="0">Parter</option>
                                         <option value="1">Piętro 1</option>
