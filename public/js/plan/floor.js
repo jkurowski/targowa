@@ -8,17 +8,38 @@ function onWindowResize() {
 }
 
 $(function () {
+    function applyGridView() {
+        $('#grid img').addClass('active');
+        $('#list img').removeClass('active');
+        $('#offerList').removeClass('list').addClass('grid');
+    }
+
     $('#list').click(function () {
         $('#list img').addClass('active');
         $('#grid img').removeClass('active');
-        $('#offerList').removeClass('grid');
-        $('#offerList').addClass('list');
+        $('#offerList').removeClass('grid').addClass('list');
     });
+
     $('#grid').click(function () {
-        $('#grid img').addClass('active');
-        $('#list img').removeClass('active');
-        $('#offerList').removeClass('list');
-        $('#offerList').addClass('grid');
+        applyGridView();
+    });
+
+    // Trigger once on load if window is less than 1000px
+    if ($(window).width() < 1000) {
+        applyGridView();
+    }
+
+    // Trigger on resize only if crossing the 1000px boundary
+    let wasBelowThreshold = $(window).width() < 1000;
+
+    $(window).on('resize', function () {
+        const isBelowThreshold = $(window).width() < 1000;
+
+        if (isBelowThreshold && !wasBelowThreshold) {
+            applyGridView();
+        }
+
+        wasBelowThreshold = isBelowThreshold;
     });
 });
 
