@@ -550,6 +550,9 @@ button:focus,
 .bttn-big:hover {
   color: white;
 }
+.bttn-big.floor-nav-bttn {
+  width: calc(100% - 60px);
+}
 .bttn-text {
   font-family: "MuseoModerno", sans-serif;
   font-weight: 400;

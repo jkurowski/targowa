@@ -19,25 +19,25 @@
         <section class="p-0">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
-                        <h1 class="page-title">{{$investment->floor->name}}</h1>
+                    <div class="col-12 col-lg-6 text-center">
+                        <h1 class="section-title">{{$investment->floor->name}}</h1>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-9 mx-auto">
-                        <div class="row floor-nav-row mt-5">
+                    <div class="col-12 col-xl-9 mx-auto">
+                        <div class="row floor-nav-row">
                             <div class="col-12 col-lg-4 text-start">
                                 @if($prev_floor)
-                                    <a href="{{route('front.developro.investment.floor', [$prev_floor, Str::slug($prev_floor->name)])}}" class="bttn-big">{{$prev_floor->name}}</a>
+                                    <a href="{{route('front.developro.investment.floor', [$prev_floor, Str::slug($prev_floor->name)])}}" class="bttn-big mt-2 floor-nav-bttn">{{$prev_floor->name}}</a>
                                 @endif
                             </div>
                             <div class="col-12 col-lg-4 d-flex justify-content-center">
-                                <a href="{{ route('front.developro.investment.index') }}" class="bttn-big">Plan budynku</a>
+                                <a href="{{ route('front.developro.investment.index') }}" class="bttn-big mt-2 floor-nav-bttn">Plan budynku</a>
                             </div>
                             <div class="col-12 col-lg-4 text-end">
                                 @if($next_floor)
-                                    <a href="{{route('front.developro.investment.floor', [$next_floor, Str::slug($next_floor->name)])}}" class="bttn-big">{{$next_floor->name}}</a>
+                                    <a href="{{route('front.developro.investment.floor', [$next_floor, Str::slug($next_floor->name)])}}" class="bttn-big mt-2 floor-nav-bttn">{{$next_floor->name}}</a>
                                 @endif
                             </div>
                         </div>

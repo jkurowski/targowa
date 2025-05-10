@@ -18,8 +18,8 @@
         <section class="p-0">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
-                        <h1 class="page-title">Znajdź swój apartament!</h1>
+                    <div class="col-12 col-lg-6 text-center">
+                        <h1 class="section-title">Znajdź swój apartament!</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -49,12 +49,12 @@
             </div>
         </section>
 
-        <div class="container mt-5">
+        <div class="container mt-0 mt-xxl-5">
             <div class="row justify-content-center">
-                <div class="col-8">
+                <div class="col-12 col-xl-10 col-xxl-8">
                     <div id="search">
-                        <form action="" method="get" class="d-flex align-items-center h-100">
-                            <div class="col">
+                        <form action="" method="get" class="d-flex align-items-center h-100 row">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputRooms" class="form-label">Ilość pokoi</label>
                                     <select id="inputRooms" class="form-select" name="s_pokoje">
@@ -66,7 +66,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputArea" class="form-label">Metraż</label>
                                     <select id="inputArea" class="form-select" name="s_metry">
@@ -78,7 +78,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-4 col-lg-3">
                                 <div class="input-select">
                                     <label for="inputFloor" class="form-label">Piętro</label>
                                     <select id="inputFloor" class="form-select" name="s_pietro">
@@ -91,7 +91,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col d-flex justify-content-end">
+                            <div class="col-12 col-lg-3 d-flex justify-content-end">
                                 <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="34.168" height="34.177" viewBox="0 0 34.168 34.177"><path d="M38.267,36.2l-9.5-9.592a13.543,13.543,0,1,0-2.055,2.082l9.441,9.53a1.462,1.462,0,0,0,2.064.053A1.472,1.472,0,0,0,38.267,36.2ZM18.123,28.8a10.694,10.694,0,1,1,7.563-3.132A10.628,10.628,0,0,1,18.123,28.8Z" transform="translate(-4.5 -4.493)" fill="#978c7d"/></svg>
                                 </button>
                             </div>
