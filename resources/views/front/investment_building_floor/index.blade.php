@@ -79,7 +79,7 @@
         <section class="search-results p-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 mx-auto pt-4 d-flex aligm-items-center justify-content-end d-none d-lg-block">
+                    <div class="col-xl-8 mx-auto pt-4 d-flex aligm-items-center justify-content-end d-none d-lg-flex">
                         <div class="list-view d-flex aligm-items-center">
                             <div id="list">
                                 <img src="{{ asset('images/lista.svg') }}" alt="ikonka listy" class="list-view__icon active">
