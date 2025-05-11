@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Route;
 Route::group([
     'namespace' => 'Admin', 'prefix' => '/admin', 'as' => 'admin.', 'middleware' => ['auth', 'verified']], function () {
 
+    Route::redirect('/', '/admin/settings/seo');
+
     Route::post('slider/set', 'Slider\IndexController@sort')->name('slider.sort');
     Route::post('gallery/set', 'Gallery\IndexController@sort')->name('gallery.sort');
     Route::post('image/set', 'Gallery\ImageController@sort')->name('image.sort');
@@ -65,9 +67,9 @@ Route::group([
 
 // CRM
     // admin.crm
-//    Route::group(['namespace' => 'Crm', 'prefix' => '/crm', 'as' => 'crm.'], function () {
-//        Route::get('inbox', 'Inbox\IndexController@index')->name('inbox.index');
-//        Route::get('inbox/datatable', 'Inbox\IndexController@datatable')->name('inbox.datatable');
+    Route::group(['namespace' => 'Crm', 'prefix' => '/crm', 'as' => 'crm.'], function () {
+        Route::get('inbox', 'Inbox\IndexController@index')->name('inbox.index');
+        Route::get('inbox/datatable', 'Inbox\IndexController@datatable')->name('inbox.datatable');
 //        Route::delete('inbox/{id}', 'Inbox\IndexController@destroy')->name('inbox.destroy');
 //
 //        // Statistics
@@ -83,7 +85,7 @@ Route::group([
 //        });
 //
 //        // admin.crm.clients.create
-//        Route::group(['namespace' => 'Client','prefix'=>'/clients', 'as' => 'clients.'], function () {
+        Route::group(['namespace' => 'Client','prefix'=>'/clients', 'as' => 'clients.'], function () {
 //
 //            Route::get('/', 'IndexController@index')->name('index');
 //            Route::get('/datatable', 'IndexController@datatable')->name('datatable');
@@ -92,17 +94,17 @@ Route::group([
 //            Route::put('/{client}', 'IndexController@update')->name('update');
 //
 //            Route::get('{client}/calendar', 'CalendarController@index')->name('calendar');
-//            Route::get('{client}/rodo', 'RodoController@show')->name('rodo');
+            Route::get('{client}/rodo', 'RodoController@show')->name('rodo');
 //
 //            // Client chat
-//            Route::group(['prefix'=>'{client}/chat', 'as' => 'chat.'], function () {
-//                Route::get('/', 'ChatController@show')->name('show');
+            Route::group(['prefix'=>'{client}/chat', 'as' => 'chat.'], function () {
+                Route::get('/', 'ChatController@show')->name('show');
 //                Route::post('/form', 'ChatController@form')->name('form');
 //                Route::post('/mark', 'ChatController@mark')->name('mark');
 //                Route::post('/', 'ChatController@create')->name('create');
-//            });
-//        });
-//    });
+            });
+       });
+});
 
 // DeveloPro
     Route::group(['namespace' => 'Developro', 'prefix' => '/developro', 'as' => 'developro.'], function () {

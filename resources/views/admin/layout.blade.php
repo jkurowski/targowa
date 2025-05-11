@@ -88,7 +88,12 @@
                         <span> DeveloCRM </span>
                     </a>
                     <ul class="sub-menu">
-
+                        <li {{ Request::routeIs('admin.crm.inbox.*') ? 'class=active' : '' }}>
+                            <a href="{{ route('admin.crm.inbox.index') }}">
+                                    <span class="menu-bullet">
+                                        <span class="bullet bullet-dot"></span>
+                                    </span> Leads</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="active">
