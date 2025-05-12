@@ -192,7 +192,7 @@
         }
 
         const markers = [];
-        markers.push(L.marker([51.75971633544925, 19.472233617747424], {icon: icons[0]}).bindPopup('Inwestycja'));
+        markers.push(L.marker([51.75971099292584, 19.47223163611452], {icon: icons[0]}).bindPopup('Inwestycja'));
 
         @foreach($markers as $m)
         markers.push(L.marker([{{ $m->lat }}, {{ $m->lng }}], {icon: icons[{{ $m->group_id }}]}).bindPopup('{{ $m->name }}'));
@@ -231,7 +231,7 @@
             });
         }));
 
-        const alwaysIncludedMarker = L.marker([51.75971633544925, 19.472233617747424], {icon: icons[0]}).bindPopup('Inwestycja');
+        const alwaysIncludedMarker = L.marker([51.75971099292584, 19.47223163611452], {icon: icons[0]}).bindPopup('Inwestycja');
 
         // Function to filter markers
         function filterMarkers(group) {
