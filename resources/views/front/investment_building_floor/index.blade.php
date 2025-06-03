@@ -161,7 +161,7 @@
                                                         </div>
                                                         <div class="row">
                                                             <div class="col-12 text-center">
-                                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                                                <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
                                                                     class="bttn-text">Sprawdź <svg xmlns="http://www.w3.org/2000/svg" width="7.13" height="12.47" viewBox="0 0 7.13 12.47"><path d="M12.425,16.227l4.715-4.719a.887.887,0,0,1,1.259,0,.9.9,0,0,1,0,1.262l-5.343,5.346a.89.89,0,0,1-1.229.026l-5.38-5.369a.891.891,0,1,1,1.259-1.262Z" transform="translate(-11.246 18.658) rotate(-90)" fill="#000"/></svg></a>
                                                             </div>
                                                         </div>
@@ -171,7 +171,7 @@
                                                             <span>{{ roomStatus($r->status) }}</span>
                                                         </div>
                                                     </div>
-                                                    <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor_number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
+                                                    <a href="{{ route('front.developro.investment.property', [$r, Str::slug($r->name), floorLevel($r->floor->number, true), number2RoomsName($r->rooms, true), round(floatval($r->area), 2) . '-m2']) }}"
                                                         class="stretchedd-link"></a>
                                                 </div>
                                             </div>
