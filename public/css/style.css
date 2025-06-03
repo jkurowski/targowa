@@ -305,6 +305,19 @@ button:focus,
   outline: 0;
   box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
 }
+.stretchedd-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 200ms linear;
+}
+.stretchedd-link:hover {
+  border-color: #978c7d;
+}
 /* Youtube
 ================================================== */
 .video-container {
