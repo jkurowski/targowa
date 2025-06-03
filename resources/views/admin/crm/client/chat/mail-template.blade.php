@@ -26,7 +26,7 @@
                         <hr style="border:0;border-bottom:1px solid #ececec" />
                         <p><b>Imię:</b> {{ $request->form_name }}</p>
                         <p><b>E-mail:</b> {{ $request->form_email }}</p>
-                        @isset($request->phone)<p style="margin:0"><b>Telefon:</b> {{ $request->phone }}</p>@endisset
+                        @isset($request->form_phone)<p style="margin:0"><b>Telefon:</b> {{ $request->form_phone }}</p>@endisset
                         @isset($property)
                             <hr style="border:0;border-bottom:1px solid #ececec" />
                             <p><b>Mieszkanie:</b> {{ $property->name }}</p>
