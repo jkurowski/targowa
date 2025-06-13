@@ -50,26 +50,30 @@
 
                         <div class="apartment-buttons">
                                <div class="">
-                                <a href="#formularz-kontaktowy" class="bttn-big mt-0">Zapytaj o mieszkanie</a>
+                                <a href="#formularz-kontaktowy" class="bttn-big mt-0 d-inline-flex d-lg-none">Zapytaj o mieszkanie</a>
                                 @if($property->file_pdf)
                                     <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" class="bttn-big mt-0" target="_blank">Pobierz kartę PDF</a>
                                 @endif
                             </div>
                         </div>
+
+                        @if ($property->file)
+                            <div class="mt-5">
+                                <a href="{{ asset('/investment/property/' . $property->file) }}" class="swipebox">
+                                    <picture>
+                                        <source type="image/webp"
+                                                srcset="{{ asset('/investment/property/thumbs/webp/' . $property->file_webp) }}">
+                                        <source type="image/jpeg"
+                                                srcset="{{ asset('/investment/property/thumbs/' . $property->file) }}">
+                                        <img src="{{ asset('/investment/property/thumbs/' . $property->file) }}"
+                                             alt="{{ $property->name }}" class="w-100">
+                                    </picture>
+                                </a>
+                            </div>
+                        @endif
                     </div>
                     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                        @if ($property->file)
-                            <a href="{{ asset('/investment/property/' . $property->file) }}" class="swipebox">
-                                <picture>
-                                    <source type="image/webp"
-                                        srcset="{{ asset('/investment/property/thumbs/webp/' . $property->file_webp) }}">
-                                    <source type="image/jpeg"
-                                        srcset="{{ asset('/investment/property/thumbs/' . $property->file) }}">
-                                    <img src="{{ asset('/investment/property/thumbs/' . $property->file) }}"
-                                        alt="{{ $property->name }}" class="w-100">
-                                </picture>
-                            </a>
-                        @endif
+                        @include('front.contact.property-form', ['propertyId' => $property->id])
                     </div>
                 </div>
             </div>
@@ -111,20 +115,6 @@
                 </div>
             </section>
         @endif
-
-        <section id="formularz-kontaktowy" class="p-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2 class="section-title">Zapytaj o mieszkanie</h2>
-                    </div>
-
-                    <div class="col-12 mt-4">
-                        @include('front.contact.form', ['propertyId' => $property->id])
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <x-cta/>
     </main>
