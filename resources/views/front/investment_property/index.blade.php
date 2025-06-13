@@ -50,7 +50,7 @@
 
                         <div class="apartment-buttons">
                                <div class="">
-                                <a href="#formularz-kontaktowy" class="bttn-big mt-0 d-inline-flex d-lg-none">Zapytaj o mieszkanie</a>
+                                <a href="#contactForm" class="bttn-big mt-0 d-inline-flex d-lg-none">Zapytaj o mieszkanie</a>
                                 @if($property->file_pdf)
                                     <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" class="bttn-big mt-0" target="_blank">Pobierz kartę PDF</a>
                                 @endif
