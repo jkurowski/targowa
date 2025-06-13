@@ -34,7 +34,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 pe-2 pe-lg-5">
                         <h1 class="section-title">{{ $property->name_list }} <span class="text-uppercase">{{ $property->number }}</span></h1>
                         <div class="row my-3 my-sm-5 apartment-details">
                             <div class="col-12 col-sm-4">
