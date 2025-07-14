@@ -65,6 +65,9 @@
                 <p><a href="{{ route('front.polityka') }}">Polityka prywatności</a> <span class="d-inline-flex me-2 ms-2">|</span> Copyright © <a href="">Finezja</a>, All Rights Reserved.</p>
                 <p>Przedstawione materiały nie stanowią oferty w rozumieniu Kodeksu cywilnego (KC), zgodnie z art. 71 KC</p>
             </div>
+            <div class="col-12 text-center mt-3">
+                <p>Niniejsze przedsięwzięcie deweloperskie, zgodnie z przepisami przejściowymi ustawy z dnia 21 maja 2025 r. o zmianie ustawy o ochronie praw nabywcy lokalu mieszkalnego lub domu jednorodzinnego oraz Deweloperskim Funduszu Gwarancyjnym, nie jest jeszcze objęte obowiązkiem prezentowania szczegółowych cen ofertowych. Obowiązki informacyjne w tym zostaną w pełni wdrożone najpóźniej do dnia 11 września 2025 r.</p>
+            </div>
         </div>
     </div>
 </footer>
