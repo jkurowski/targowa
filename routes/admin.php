@@ -123,6 +123,7 @@ Route::group([
                 '{investment}/houses' => 'House\HouseController',
                 '{investment}/floors' => 'Floor\FloorController',
                 '{investment}/floor/{floor}/properties' => 'Property\PropertyController',
+                '{investment}/floor/{floor}/others' => 'Property\OthersController',
                 '{investment}/buildings' => 'Building\BuildingController',
                 '{investment}/building.floors' => 'Building\BuildingFloorController',
                 '{investment}/building.floor.properties' => 'Building\BuildingPropertyController',

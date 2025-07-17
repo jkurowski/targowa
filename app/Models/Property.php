@@ -52,7 +52,17 @@ class Property extends Model
         'meta_title',
         'meta_description',
         'views',
-        'active'
+        'active',
+
+        'price_brutto',
+        'price_30',
+        'vat',
+        'id',
+        'highlighted',
+        'promotion_end_date',
+        'promotion_price',
+        'promotion_price_show',
+        'visitor_related_type',
     ];
 
     /**

@@ -54,7 +54,6 @@ class PropertyFormRequest extends FormRequest
             'name_list' => 'string|max:255',
             'number' => 'required|string|max:255',
             'number_order' => 'integer',
-            'highlighted' => '',
             'homepage' => '',
             'rooms' => 'required|integer',
             'area' => '',
@@ -70,11 +69,37 @@ class PropertyFormRequest extends FormRequest
             'storeroom' => '',
             'deadline' => '',
             'kitchen_type' => 'integer',
-            'price' => '',
             'cords' => '',
             'html' => '',
             'meta_title' => '',
-            'meta_description' => ''
+            'meta_description' => '',
+
+            'vat' => '',
+            'price' => ['nullable', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'price_brutto' => ['nullable', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'price_30' => ['nullable', 'regex:/^\d+(\.\d{1,2})?$/'],
+            'type' => 'required|integer',
+            'visitor_related_type' => 'integer',
+            'visitor_related_ids' => 'required_if:visitor_related_type,3|array|min:1',
+            'promotion_price' => [
+                'nullable',
+                'numeric',
+                function ($attribute, $value, $fail) {
+                    if (!empty($value) && !$this->boolean('highlighted')) {
+                        $fail('Pole "Promocja" musi być zaznaczone, jeśli ustawiono cenę promocyjną.');
+                    }
+                },
+            ],
+            'highlighted' => [
+                'boolean',
+                function ($attribute, $value, $fail) {
+                    if ($this->boolean($attribute) && empty($this->input('promotion_price'))) {
+                        $fail('Pole "Cena promocyjna" jest wymagane, jeśli nieruchomość ma być promowana.');
+                    }
+                },
+            ],
+            'promotion_end_date' => 'nullable|date|after:now',
+            'promotion_price_show' => 'boolean',
         ];
     }
 }
